@@ -1,0 +1,775 @@
+/* EliteShell theme for Reddit version 1.0 by /u/mos_6502.
+ * Based on the stylesheet of /r/nameaserver.
+ * Find out more on /r/EliteShell.
+ 
+ * ------------Changelog------------
+ * July 9 2014: Version 1.0 release.
+ * --
+ * RESOURCES:
+ * In this repo:
+ * spritesheet.png - general sprites
+ * expando.png - expando buttons.
+ 
+ * ALTERNATE LINKS TO RESOURCES (it's best to just use the ones in the repo, these are just backups):
+ * Spritesheet (save as spritesheet.png): https://imgur.com/bxscGWu
+ * Expando buttons (save as expando.png): https://imgur.com/0Fox5fh
+ */
+
+body {
+    font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
+    color: #00cc00;
+    background-color: #222;
+}
+a, .title, span .title, .linefield .title, .roundfield title, h2, h3, h4, h5, h6, h1, .flairselectorbtn, .tagline a, .sidecontentbox .title h1, .link .score.likes,.link .score, .reason, .thing.stickied .usertext a, .wiki-page .wiki-page-content .description h2, .wiki-page, .wiki-page-content, .description, time, .generic-table td, .nextprev{
+    color: #00cc00;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #006600;
+}
+button {
+    border: 1px solid #00cc00;
+    background: #222;
+    color: #00cc00;
+    font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
+}
+::-webkit-input-placeholder {
+    color: #00cc00;
+}
+:-moz-placeholder {
+    color: #00cc00;
+}
+::-moz-placeholder {
+    color: #00cc00;
+}
+:-ms-input-placeholder {
+    color: #00cc00;
+}
+.error {
+    color: #00cc00;
+}
+.infobar.welcome, .nub {
+    display: none!important;
+}
+body.wiki-page {
+    background-color: #cacaca;
+    color: #222;
+}
+.comment-visits-box .title, .sr-bar a.gold, .flat-list li a.gold, .user .userkarma, .comment .author, .pref-lang {
+    font-weight: normal;
+}
+#header {
+    background-color: #222;
+    border: none;
+}
+#header #sr-header-area {
+    background-color: #222;
+    border-bottom: 2px solid #006600;
+    text-transform: lowercase;
+    font-size: 100%}
+#header #sr-header-area a, #header #sr-header-area .selected.title {
+    color: #006600;
+}
+#header #sr-header-area .drop-choices {
+    background-color: #222;
+    border: 2px solid #006600;
+}
+#header #sr-header-area .drop-choices a.choice {
+    background-color: #222;
+}
+#header #sr-header-area #sr-more-link, .file{
+    background-color: #222;
+}
+#header #sr-header-area .srdrop .choice.bottom-option {
+    border: none;
+}
+#header #sr-header-area .sr-bar .separator {
+    color: #006600;
+}
+#header-bottom-left .tabmenu {
+    display: none;
+}
+#header-bottom-left #header-img.default-header {
+    display: none;
+}
+#header-bottom-left .redditname {
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 3em;
+    margin-left: -5px;
+}
+#header-bottom-left .redditname:after {
+    content: "$";
+    color: #00cc00;
+}
+#header-img {
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+}
+#header-img-a:after {
+    content: "reddit@";
+    margin-left: 5px;
+    color: #00cc00;
+    font-size: 3em;
+    font-weight: normal;
+}
+#header-img-a:visited {
+    color: #00cc00;
+}
+#header-bottom-left .redditname a {
+    color: #00cc00;
+    font-weight: normal;
+}
+#header-bottom-left .redditname a:visited {
+    color: #00cc00;
+}
+#header-bottom-right {
+    background-color: #222;
+}
+#header-bottom-right a, #header-bottom-right .user, #header-bottom-right .userkarma, #header-bottom-right .separator {
+    color: #006600;
+    border: none;
+}
+#mail.nohavemail {
+    background-image: url("%%spritesheet%%");
+    background-position: 0px -55px;
+    background-repeat: no-repeat;
+}
+#mail.havemail {
+    background-image: url("%%spritesheet%%");
+    background-position: 0px -44px;
+    background-repeat: no-repeat;
+}
+#modmail.havemail {
+    background-image: url("%%spritesheet%%");
+    background-position: 0px -66px;
+    background-repeat: no-repeat;
+}
+#modmail.nohavemail {
+    background-image: url("%%spritesheet%%");
+    background-position: 0px -81px;
+    background-repeat: no-repeat;
+}
+.side {
+    background-color: #222;
+    margin-top: 55px;
+    border-left: 2px solid #00cc00;
+    border-bottom: 2px solid #00cc00;
+    border-right: 2px solid #00cc00;
+    width: 400px;
+}
+.side .titlebox .md {
+    font-size: small;
+}
+.side .titlebox {
+    padding: 5px;
+    border-bottom: 2px solid #00cc00;
+}
+.side .titlebox .md p {
+    margin: 0px;
+}
+.side:after {
+    display: block;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    color: #00cc00;
+    content: "/r/EliteShell 1.0 by /u/mos_6502";
+   /* Please, don't mess with this. I worked hard to make this theme awesome, and 
+    * I'd like others to be able to as well. Keeping this in lets others find and contribute
+    * to the theme, making it better :)
+    * <3, /u/mos_6502 
+    */
+}
+
+.fancy-toggle-button {
+    margin: 0px;
+}
+.fancy-toggle-button .active {
+    border: none;
+    background: none;
+    color: #00cc00;
+    padding: 0px;
+    font-size: small;
+}
+.fancy-toggle-button .remove {
+    border: none;
+    background: none;
+    color: #00cc00;
+    padding: 0px;
+}
+.subscribers, .subscribers .number {
+    display: block;
+}
+.subscribers .number {
+    margin-bottom: 5px;
+}
+.subscribers .word {
+    display: none;
+}
+
+.subscribers .number:after {
+    content: " total subscribers."}
+
+.users-online:before {
+    display: none;
+}
+.users-online .number:after {
+    content: " currently online.";
+}
+.users-online .word {
+    display: none;
+}
+
+.debuginfo .icon {
+    display: none;
+}
+.debuginfo .content:before {
+    content: "π "}
+.debuginfo .content {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    max-height: 43px;
+    margin: 0px;
+    top: 70px;
+    right: 5px;
+    width: 390px;
+    text-transform: lowercase;
+    font-size: small;
+    text-align: left;
+    color: #00cc00;
+    border-top: 2px solid #00cc00;
+    border-right: 2px solid #00cc00;
+    border-left: 2px solid #00cc00;
+    border-bottom: 2px solid #00cc00;
+    padding: 5px 5px 5px 5px;
+}
+.side .spacer {
+    margin: 0px;
+    padding: 0px;
+}
+.side .login-form-side {
+    border-bottom: 2px solid #00cc00;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.side .login-form-side input {
+    background-color: #222;
+    color: #00cc00;
+    font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
+    border: 2px solid #00cc00;
+}
+.side .titlebox .usertext-body .md hr {
+    background-color:#222;
+}
+ .side #search, .side .titlebox .redditname, .side .titlebox form.toggle, .side .titlebox .leavemoderator, .side .sidebox, .side .titlebox .bottom, .side .sidecontentbox, .side .account-activity-box, .search, .searchexpando, .infobar, input, .title-field, .url-field, .reddit-field, .spacer, .roundfield .info-notice, .icon-menu a, .sidebox .spacer, .sidebox .subtitle{
+    background-color:#222;
+    color:#00cc00;
+} 
+
+.titlebox h1 a, .submit_text h1 {
+    color:#00cc00;
+}
+
+.linefield, .roundfield,.content.submit .info-notice, .submit_text h1  {
+  background-color: #001A00;
+}
+
+.content.submit .info-notice {
+ border-color: red;
+}
+
+.tabmenu.formtab a, .tabmenu.formtab, .tabmenu, .morelink, .selected a, .tabmenu li a, .tabmenu li.selected a, .disabled .morelink, .disabled .morelink:hover, .disabled .morelink a {
+    background-color:#222;
+    color:#00cc00;
+}
+
+.tabmenu li a, .tabmenu li.selected a, .tabmenu.formtab .selected a, .tabmenu.formtab a, .disabled .morelink a, .flairselector li.selected{
+    background-color:#222;
+    border: 1px solid #00cc00;
+    color:#00cc00;
+}
+
+.selected a{
+    background-color:#222;
+    color:#00cc00;
+    font-weight: bold;
+}
+
+
+.infobar{
+    background-color:#222;
+    border: 1px solid #00cc00;
+    color:#00cc00;
+}
+
+.usertable>.toggle{
+    background-color:#001A00;
+    border: 1px solid #00cc00;
+    color:#00cc00;
+}
+
+
+.tabmenu .selected{border: 1px solid #00cc00;}
+
+.tabpane-content{border:none; padding:4px 4px 4px 4px;}
+
+ul, li{color:#00cc00;}
+
+.morelink:hover, .morelink, .mlh{color: #006600;border-color: #00cc00; background-image:none;}
+
+.morelink a:hover{color: #006600;border-color: #00cc00; background-image:none; background-color:#00cc00;}
+
+.side .usertext-body .md h1 a, .side .usertext-body .md h2 a, .side .usertext-body .md h3 a, .side .usertext-body .md h4 a, .side .usertext-body .md h5 a, .side .usertext-body .md h6 a, .side .usertext-body .md blockquote a, .morelink a {
+    display: block;
+    font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
+    font-size: medium;
+    color: #00cc00;
+    text-decoration: none;
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+.side .usertext-body .md a strong {
+    font-weight: normal;
+}
+.side .usertext-body .md h1 a:hover, .side .usertext-body .md h2 a:hover, .side .usertext-body .md h3 a:hover, .side .usertext-body .md h4 a:hover, .side .usertext-body .md h5 a:hover, .side .usertext-body .md h6 a:hover, .side .usertext-body .md blockquote a:hover {
+    margin-bottom: 0px;
+    border-bottom: 2px solid #00cc00;
+}
+.side #ad_main {
+    width: 300px;
+    padding-left: 50px;
+}
+.side #ad_main html body {
+    margin: 0 50px;
+}
+.linklisting .thing .title a {
+    color: #00cc00;
+    margin-right: 0px;
+}
+.linklisting .thing p.title a.title:before{
+    content: "$";
+    color: #00cc00;
+}
+.linklisting .thing .title a:visited {
+    color: #00cc00;
+}
+.thing .title {
+    color: #00cc00;
+}
+.thing .title:visited, .thing.visited .title {
+    color: #006600;
+}
+.linklisting .thing .title a:hover {
+    color: #00cc00;
+    text-decoration: underline;
+}
+.linklisting .entry .buttons li a {
+    color: #00cc00;
+    font-weight: normal;
+}
+.linklisting ul.flat-list.buttons a.comments {
+    font-size: small;
+    color: #00cc00;
+}
+.linklisting ul.flat-list.buttons li.share, .linklisting ul.flat-list.buttons .save-button, .linklisting ul.flat-list.buttons .hide-button, .linklisting ul.flat-list.buttons .report-button {
+    display: none;
+}
+.link.last-clicked {
+    border: none;
+}
+.thing.stickied {
+    border-left: 7px solid #00cc00!important;
+}
+.thing.stickied a.title {
+    font-weight: normal;
+}
+.thing.stickied .midcol {
+    display: none;
+}
+body.comments-page .side .linkinfo {
+    display: none;
+}
+.morecomments a {
+    color: #00cc00;
+    font-weight: normal!important;
+}
+.link .usertext .md {
+    border: 2px solid #00cc00;
+    background: none;
+    border-radius: 0px;
+    color: #00cc00;
+}
+.comment .child, .comment .showreplies {
+    border-left: 2px solid #006600;
+}
+.entry .buttons li a {
+    color: #006600;
+    font-weight: normal;
+}
+.commentarea .tagline {
+    color: #006600;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #00cc00;
+    margin: 0;
+    padding: 0;
+}
+.md blockquote {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+}
+
+.commentarea form[id*="form-"] .usertext-edit textarea:active, .commentarea form[id*="form-"] .usertext-edit textarea:focus {
+    background: transparent;
+}
+.commentarea .menuarea {
+    color: #00cc00;
+}
+.commentarea .menuarea .dropdown.lightdrop .selected {
+    color: inherit;
+}
+.commentarea .panestack-title {
+    border-bottom: 2px solid #00cc00;
+}
+.commentarea .menuarea .drop-choices {
+    background-color: #222;
+    border: 2px solid #00cc00;
+}
+.commentarea .menuarea .drop-choices a.choice:hover {
+    background-color: #222;
+    border: none;
+}
+.commentarea .usertext-edit textarea {
+    background-color: #222;
+    border: 2px solid #00cc00;
+    color: #00cc00;
+    font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
+}
+.comment .collapsed, .comment .collapsed a {
+    color: #006600;
+}
+.comment .expand {
+    color: #00cc00;
+}
+.comment .expand:hover {
+    background: #00cc00;
+    color: #006600;
+}
+.usertext.grayed .usertext-body {
+    background: none;
+    color: inherit;
+}
+.commentarea .infobar {
+    background: none;
+    border: none;
+}
+.usertext.border .usertext-body, .new-comment .usertext-body {
+    border: 2px solid #006600;
+    background: none;
+}
+.comment a.author {
+    color: #006600;
+}
+.comment a.author:visited {
+    color: #006600;
+}
+.arrow.up {
+    background-image: url("%%spritesheet%%");
+    background-position: -15px -22px;
+    width: 14px;
+    height: 11px;
+}
+.arrow.upmod {
+    background-image: url("%%spritesheet%%");
+    background-position: -15px 0px;
+    width: 14px;
+    height: 11px;
+}
+.arrow.down {
+    background-image: url("%%spritesheet%%");
+    background-position: -15px -33px;
+    width: 14px;
+    height: 11px;
+
+}
+.arrow.downmod {
+    background-image: url("%%spritesheet%%");
+    background-position: -15px -11px;
+    width: 14px;
+    height: 11px;
+
+}
+.gold-form {
+    font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
+}
+.gold-form .roundfield {
+    border: 2px solid #00cc00;
+    background-color: #222;
+    color: #00cc00;
+    border-radius: 0px;
+}
+.gold-payment .roundfield-content {
+    margin-left: 0px;
+}
+.gold-form .gold-logo {
+    display: none;
+}
+.gold-button {
+    border: 1px solid #00cc00;
+    background: #222;
+    color: #00cc00;
+    font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
+    text-shadow: none;
+}
+.gold-payment .close-button {
+    width: auto;
+    height: auto;
+    float: right;
+    border: none;
+    background: none;
+    opacity: 1;
+    text-indent: 0px;
+}
+.footer-parent .bottommenu {
+    color: #00cc00;
+}
+.footer-parent .bottommenu a {
+    color: #00cc00;
+    text-decoration: none;
+}
+.footer-parent .bottommenu a:hover {
+    text-decoration: underline;
+}
+.footer-parent .bottommenu a:visited {
+    color: #006600;
+}
+.footer-parent .flat-vert.title {
+    color: #00cc00;
+    font-size: 1em;
+    font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
+    border-bottom: 2px solid #00cc00;
+}
+.buygold {
+    color: #00cc00;
+}
+.footer-parent .rounded {
+    border-radius: 0px;
+    padding: 0px;
+}
+.footer-parent .footer {
+    border: 2px solid #00cc00;
+}
+.footer-parent .footer .col {
+    border-left: 2px solid #00cc00;
+    padding: 5px 5px;
+    margin: 0px;
+}
+.footer-parent .footer .col:first-child {
+    border: none;
+}
+.gold-accent {
+    background: none;
+    border: none;
+    color: #006600;
+}
+.gold-accent.comment-visits-box {
+    color: #006600;
+    padding: 0px;
+    max-width: 550px;
+}
+.linkflairlabel {
+    display: inline;
+    max-width: none;
+    background: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: inherit;
+}
+.linkflair-goal-bucket-1 .linkflairlabel, .linkflair-goal-bucket-1-active .linkflairlabel, .post-linkflair-goal-bucket-1 .usertext-body .md p em, .post-linkflair-goal-bucket-1-active .comment .usertext-body .md p em, .side .usertext-body .md h6 a strong {
+    font-style: normal;
+    color: #cc0000;
+}
+.linkflair-goal-bucket-1, .linkflair-goal-bucket-1-active {
+    border-left: 7px solid #cc0000!important;
+}
+.linkflair-goal-bucket-2 .linkflairlabel, .linkflair-goal-bucket-2-active .linkflairlabel, .post-linkflair-goal-bucket-2 .comment .usertext-body .md p em, .post-linkflair-goal-bucket-2-active .comment .usertext-body .md p em, .side .usertext-body .md h5 a strong {
+    font-style: normal;
+    color: #ff6600;
+}
+.linkflair-goal-bucket-2, .linkflair-goal-bucket-2-active {
+    border-left: 7px solid #ff6600!important;
+}
+.linkflair-goal-bucket-3 .linkflairlabel, .linkflair-goal-bucket-3-active .linkflairlabel, .post-linkflair-goal-bucket-3 .comment .usertext-body .md p em, .post-linkflair-goal-bucket-3-active .comment .usertext-body .md p em, .side .usertext-body .md h4 a strong {
+    font-style: normal;
+    color: #cccc00;
+}
+.linkflair-goal-bucket-3, .linkflair-goal-bucket-3-active {
+    border-left: 7px solid #cccc00!important;
+}
+.linkflair-goal-bucket-4 .linkflairlabel, .linkflair-goal-bucket-4-active .linkflairlabel, .post-linkflair-goal-bucket-4 .comment .usertext-body .md p em, .post-linkflair-goal-bucket-4-active .comment .usertext-body .md p em, .side .usertext-body .md h3 a strong {
+    font-style: normal;
+    color: #0066cc;
+}
+.linkflair-goal-bucket-4, .linkflair-goal-bucket-4-active {
+    border-left: 7px solid #0066cc!important;
+}
+.linkflair-goal-bucket-5 .linkflairlabel, .linkflair-goal-bucket-5-active .linkflairlabel, .post-linkflair-goal-bucket-5 .comment .usertext-body .md p em, .post-linkflair-goal-bucket-5-active .comment .usertext-body .md p em, .side .usertext-body .md h2 a strong {
+    font-style: normal;
+    color: #9966cc;
+}
+.linkflair-goal-bucket-5, .linkflair-goal-bucket-5-active {
+    border-left: 7px solid #9966cc!important;
+}
+.linkflair-goal-bucket-6 .linkflairlabel, .linkflair-goal-bucket-6-active .linkflairlabel, .post-linkflair-goal-bucket-6 .comment .usertext-body .md p em, .post-linkflair-goal-bucket-6-active .comment .usertext-body .md p em, .side .usertext-body .md h1 a strong {
+    font-style: normal;
+    color: #33cc99;
+}
+.linkflair-goal-bucket-6, .linkflair-goal-bucket-6-active {
+    border-left: 7px solid #33cc99!important;
+}
+.linkflair-lounge .linkflairlabel, .post-linkflair-lounge .comment .usertext-body .md p {
+    color: #9A7D2E;
+}
+.side .usertext-body .md blockquote a strong {
+    color: #9A7D2E;
+}
+.linkflair-lounge {
+    border-left: 7px solid #9A7D2E!important;
+}
+.comment .child .usertext-body .md p {
+    color: #00cc00;
+}
+.comment .child .usertext-body .md p em {
+    color: #00cc00;
+    font-style: italic;
+}
+.res-navTop #userbarToggle {
+    color: #00cc00;
+    background-color: #222;
+    border: 1px solid #00cc00;
+}
+.content .RES-keyNav-activeElement, .content .commentarea .RES-keyNav-activeElement .md, .content .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+    background-color: #303030!important;
+}
+.res-commentBoxes .comment {
+    border: none!important;
+}
+.res-commentBoxes .comment, .res-commentBoxes .comment .comment, .res-commentBoxes .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment {
+    background-color: #222!important;
+}
+.sheets .col textarea {
+    width: 90%}
+.thing.stickied .midcol {
+    display: nonel;
+}
+textarea {border: 1px solid #00cc00 !important;}
+textarea, input{color: #00cc00;background-color: #222;}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0,204,0,0.8);
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(34, 34, 34, 1)
+}
+
+.moderator { color:#00cc00;}
+.rank, body >.content .link .rank, .rank-spacer, .tagline, .commentarea .menuarea .toggle a,.gadget small, .gray{color: #007A00;}
+
+.flair, .linkflairlabel {color:#00cc00; border: 1px solid #00cc00; background-color: #222;}
+
+#moresearchinfo{border:1px solid #00cc00;}
+
+.flairselector, .flairselector h2, .flairselector.drop-choices.active{background:#222; box-shadow:none; border: 1px solid #00cc00}
+
+.formtabs-content{border-top: 4px solid #001A00;}
+
+#search input[type=text]{margin-top: 9px; border: 1px solid #00cc00;}
+
+.titlebox .bottom{border-top: 1px solid #007A00;}
+.sidecontentbox .content {border: 1px solid #007A00;}
+
+.roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .img-name, .reason{border: 1px solid #00cc00;}
+.md blockquote{color:#00cc00; border-left: 3px solid #00cc00;}
+
+
+.expando-button.video.collapsed,.expando-button.video.collapsed:hover,.eb-vch,.expando-button.video.expanded,.eb-ve,.expando-button.video.expanded:hover,.eb-veh,.expando-button.selftext.collapsed,.expando-button.selftext.collapsed:hover,.expando-button.selftext.expanded,.expando-button.selftext.expanded:hover{
+  background-image:url(%%expando%%);
+  background-repeat:no-repeat;
+
+  /* #enable-expando-buttons
+   * !IMPORTANT:
+   * If you'd like the nifty expando-buttons (e.g. https://imgur.com/xbKZGWQ),
+   * then remove the line of code below. DON'T MESS WITH ANYTHING ELSE. 
+   * I personally don't like the look of them, but it's your sub, do what you like
+   * :)
+   */
+  display: none;
+
+}
+
+.expando-button.video.collapsed {background-position:-23px -74px;}
+.expando-button.video.collapsed:hover,.eb-vch {background-position:0 -74px;}
+.expando-button.video.expanded,.eb-ve {background-position:-23px -97px;}
+.expando-button.video.expanded:hover,.eb-veh {background-position:0 -97px;}
+.expando-button.selftext.collapsed {background-position:-23px -28px;}
+.expando-button.selftext.collapsed:hover {background-position:0 -28px;}
+.expando-button.selftext.expanded {background-position:-23px -51px;}
+.expando-button.selftext.expanded:hover {background-position:0 -51px;}
+
+#stylesheet_contents{width:86%;}
+.nsfw-stamp acronym{color:#00cc00; border:1px solid green!important}
+.flairselector li{ border:1px solid #006600; background-color:#222; }
+.flairselector form{border-top:1px solid #00cc00}
+.flairselector li:hover{background-color:#222;border:1px solid #00cc00;}
+.flairselector li a, .flairselectbtn{color:#006600!important;}
+.flairselector li a:hover{color:#00cc00!important;}
+.flair-entry{display: block;}
+*::selection {background: #00cc00;}
+*::-moz-selection {background: #00cc00;}
+body.wiki-page{background-color:#222}
+.wiki-page .wikititle{color:#006600;}
+.wiki-page .wiki-page-content #wiki_revision_reason{width:86%}
+textarea{max-width:86%}
+.content .infobar{width:60%}
+.linefield{color:#00cc00;}
+.wiki-page .wiki-page-content .md{color: #00cc00;}
+.wiki-page .pageactions .wikiaction-current{color: #00cc00; background-color:#006600;}
+.wiki-page .pageactions .wikiaction:hover{color:#006600; background-color:#00cc00;}
+input[type=submit], input[name=username], input[name=reason], .img-name{border:1px solid #00cc00;}
+input[type=file]{background-color:#001A00;}
+.wiki-page .pageactions{border: 2px solid #00cc00;}
+.wiki-page .wiki-page-content .wikirevisionlisting .generic-table{max-width:87%;}
+.revision{background-color: #006600;}
+.revision a{color:#00cc00;}
+.img-name{border:none;}
+.nextprev a, .next-suggestions a{color:#006600; background:#00cc00; border: 1px solid #006600;}
+.nextprev a:hover, .next-suggestions a:hover{color:#006600; background:#00cc00; border: 1px solid #00cc00;}
+.sidebox.create .spacer .subtitle{text-align:center;}
+.sidebox.create .spacer a{display:none;}
