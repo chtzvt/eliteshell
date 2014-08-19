@@ -4,28 +4,7 @@
  
  * ------------Changelog------------
  * July 9 2014: Version 1.0 release.
- 
- * July 16 2014: Starting readability effort.
- * -Underlined links in self posts and comments
- * -Minor tweak to visited link color
- * Fixed various itemd on to do list.
- * Fixed search! Was messed up earlier.
- 
- * TO DO:
- * RES "Show images" button gone? (idk what that is, user hasn't supplied any images.)
-
- * Very tricky or Not-so-important:
- * Fix search box bug. (Only affects some devices, but not all?)
- * Fix debug info bug on mobile. (Appears to be buggy on all mobile platforms.)
-
- * Text selection looks terrible on FF, it's a solid color. -FIXED!!
- * Fix upvotes on stickied posts! -FIXED!
- * The next/previous buttons look kinda ugly. FIXED.
- * Fix RES bugs. -DONE! Thanks, /u/gavin19!
- * a:visited is TOO DARK! It must be lightened up for better visibility. -lightened up! May need future tweaking, though.
- * Code formatting/quoting fixed!
  * --
-
  * RESOURCES:
  * In this repo:
  * spritesheet.png - general sprites
@@ -45,20 +24,16 @@ a, .title, span .title, .linefield .title, .roundfield title, h2, h3, h4, h5, h6
     color: #00cc00;
     text-decoration: none;
 }
-.md a {
-  text-decoration: underline;
-}
 a:hover {
     text-decoration: underline;
 }
 a:visited {
-    /*color:#199A19;*/
-      color:#006600;
+    color: #006600;
 }
 button {
     border: 1px solid #00cc00;
     background: #222;
-    color: #00cc00!important;
+    color: #00cc00;
     font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
 }
 ::-webkit-input-placeholder {
@@ -113,6 +88,9 @@ body.wiki-page {
 }
 #header #sr-header-area .sr-bar .separator {
     color: #006600;
+}
+#header-bottom-left .tabmenu {
+    display: none;
 }
 #header-bottom-left #header-img.default-header {
     display: none;
@@ -200,11 +178,11 @@ body.wiki-page {
     margin: 10px 0px;
     padding: 10px 0px;
     color: #00cc00;
-    content: "/r/EliteShell 2.0 by /u/mos_6502";
-   /* Please, don't mess with this. I worked hard to make this theme awesome, and
+    content: "/r/EliteShell 1.0 by /u/mos_6502";
+   /* Please, don't mess with this. I worked hard to make this theme awesome, and 
     * I'd like others to be able to as well. Keeping this in lets others find and contribute
     * to the theme, making it better :)
-    * <3, /u/mos_6502
+    * <3, /u/mos_6502 
     */
 }
 
@@ -234,10 +212,6 @@ body.wiki-page {
     display: none;
 }
 
-.users-online:before {
-    display: none;
-}
-
 .subscribers .number:after {
     content: " total subscribers."}
 
@@ -247,7 +221,6 @@ body.wiki-page {
 .users-online .number:after {
     content: " currently online.";
 }
-
 .users-online .word {
     display: none;
 }
@@ -298,7 +271,7 @@ body.wiki-page {
  .side #search, .side .titlebox .redditname, .side .titlebox form.toggle, .side .titlebox .leavemoderator, .side .sidebox, .side .titlebox .bottom, .side .sidecontentbox, .side .account-activity-box, .search, .searchexpando, .infobar, input, .title-field, .url-field, .reddit-field, .spacer, .roundfield .info-notice, .icon-menu a, .sidebox .spacer, .sidebox .subtitle{
     background-color:#222;
     color:#00cc00;
-}
+} 
 
 .titlebox h1 a, .submit_text h1 {
     color:#00cc00;
@@ -385,7 +358,7 @@ ul, li{color:#00cc00;}
     color: #00cc00;
 }
 .linklisting .thing .title a:visited {
-      color:#008F00;
+    color: #00cc00;
 }
 .thing .title {
     color: #00cc00;
@@ -417,7 +390,9 @@ ul, li{color:#00cc00;}
 .thing.stickied a.title {
     font-weight: normal;
 }
-
+.thing.stickied .midcol {
+    display: none;
+}
 body.comments-page .side .linkinfo {
     display: none;
 }
@@ -697,7 +672,9 @@ hr {
 }
 .sheets .col textarea {
     width: 90%}
-
+.thing.stickied .midcol {
+    display: nonel;
+}
 textarea {border: 1px solid #00cc00 !important;}
 textarea, input{color: #00cc00;background-color: #222;}
 
@@ -708,7 +685,7 @@ textarea, input{color: #00cc00;background-color: #222;}
  
 /* Track */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
@@ -739,12 +716,21 @@ textarea, input{color: #00cc00;background-color: #222;}
 .sidecontentbox .content {border: 1px solid #007A00;}
 
 .roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .img-name, .reason{border: 1px solid #00cc00;}
-.md blockquote{color:#00cc00; border-left: 3px solid #00cc00; font-family: "Lucida Console", Monaco, monospace!important;/* background-color:#2E2E2B;*/}
+.md blockquote{color:#00cc00; border-left: 3px solid #00cc00;}
 
 
 .expando-button.video.collapsed,.expando-button.video.collapsed:hover,.eb-vch,.expando-button.video.expanded,.eb-ve,.expando-button.video.expanded:hover,.eb-veh,.expando-button.selftext.collapsed,.expando-button.selftext.collapsed:hover,.expando-button.selftext.expanded,.expando-button.selftext.expanded:hover{
   background-image:url(%%expando%%);
   background-repeat:no-repeat;
+
+  /* #enable-expando-buttons
+   * !IMPORTANT:
+   * If you'd like the nifty expando-buttons (e.g. https://imgur.com/xbKZGWQ),
+   * then remove the line of code below. DON'T MESS WITH ANYTHING ELSE. 
+   * I personally don't like the look of them, but it's your sub, do what you like
+   * :)
+   */
+  display: none;
 
 }
 
@@ -765,8 +751,8 @@ textarea, input{color: #00cc00;background-color: #222;}
 .flairselector li a, .flairselectbtn{color:#006600!important;}
 .flairselector li a:hover{color:#00cc00!important;}
 .flair-entry{display: block;}
-*::selection {background: #00A300;}
-*::-moz-selection {background: #00A300;}
+*::selection {background: #00cc00;}
+*::-moz-selection {background: #00cc00;}
 body.wiki-page{background-color:#222}
 .wiki-page .wikititle{color:#006600;}
 .wiki-page .wiki-page-content #wiki_revision_reason{width:86%}
@@ -783,36 +769,7 @@ input[type=file]{background-color:#001A00;}
 .revision{background-color: #006600;}
 .revision a{color:#00cc00;}
 .img-name{border:none;}
-.nextprev a, .next-suggestions a{color:#00cc00; background:#222; border: 1px solid #00cc00;}
-.nextprev a:hover, .next-suggestions a:hover{color:#222; background:#00cc00; border: 1px solid #00cc00;}
+.nextprev a, .next-suggestions a{color:#006600; background:#00cc00; border: 1px solid #006600;}
+.nextprev a:hover, .next-suggestions a:hover{color:#006600; background:#00cc00; border: 1px solid #00cc00;}
 .sidebox.create .spacer .subtitle{text-align:center;}
 .sidebox.create .spacer a{display:none;}
-.res:not(.res-nightmode) .commentarea .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {background: transparent!important;}
-.md pre, code{background-color:#2E2E2B;}
-.searchpane{background-color:#222!important; /*width:62%;*/ border:none;}
-.searchfacets{background-color:#222!important; box-shadow:none; border:none;}
-.popup{background-color:#222;}
-.cover{background-color:#000;}
-.login-form-section>h3{color:#00cc00!important;}
-
-/* I'm all for supporting Reddit, but this is somewhat intrusive.
- * Sorry, but this disrupts my theme a lot :/
- * MOD NOTE: If you want to enable the little ad at the top of the subreddit page, remove the .sponsorshipbox... CSS below.
- */
-.sponsorshipbox{visibility:hidden!important; display:none!important;}
-
-/* #header-bottom-left .tabmenu {display:block!important;} */
-#header-bottom-left .tabmenu li a{border:none;}
-#header-bottom-left .tabmenu .selected{border:none;}
-#header-bottom-left .tabmenu li.selected a{border-bottom:2px solid #00cc00;}
