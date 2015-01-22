@@ -5,19 +5,20 @@
  * ------------Changelog------------
  * July 9 2014: Version 1.0 release.
  
- * July 16 2014: Starting readability effort.
+ * July 16 2014: Starting readability effort. 
  * -Underlined links in self posts and comments
  * -Minor tweak to visited link color
  * Fixed various itemd on to do list.
- * Fixed search! Was messed up earlier.
+ * Fixed search! Was messed up earlier. 
  
- * TO DO:
+ * TO DO: 
  * RES "Show images" button gone? (idk what that is, user hasn't supplied any images.)
 
- * Very tricky or Not-so-important:
+ * Very tricky or Not-so-important: 
  * Fix search box bug. (Only affects some devices, but not all?)
- * Fix debug info bug on mobile. (Appears to be buggy on all mobile platforms.)
+ * Fix debug info bug on mobile. (Appears to be buggy on all mobile platforms.) 
 
+ * Fixed scrollbar on webkit browsers.
  * Text selection looks terrible on FF, it's a solid color. -FIXED!!
  * Fix upvotes on stickied posts! -FIXED!
  * The next/previous buttons look kinda ugly. FIXED.
@@ -41,13 +42,13 @@ body {
     color: #00cc00;
     background-color: #222;
 }
-a, .title, span .title, .linefield .title, .roundfield title, h2, h3, h4, h5, h6, h1, .flairselectorbtn, .tagline a, .sidecontentbox .title h1, .link .score.likes,.link .score, .reason, .thing.stickied .usertext a, .wiki-page .wiki-page-content .description h2, .wiki-page, .wiki-page-content, .description, time, .generic-table td, .nextprev{
-    color: #00cc00;
+a, .title, span .title, .linefield .title, .roundfield title, h2, h3, h4, h5, h6, h1, .flairselectorbtn, .tagline a, .sidecontentbox .title h1, .link .score.likes,.link .score, .score, .reason, .thing.stickied .usertext a, .wiki-page .wiki-page-content .description h2, .wiki-page, .wiki-page-content, .description, time, .generic-table td, .nextprev{
+    color: #00cc00!important;
     text-decoration: none;
 }
 .md a {
   text-decoration: underline;
-}
+} 
 a:hover {
     text-decoration: underline;
 }
@@ -55,6 +56,11 @@ a:visited {
     /*color:#199A19;*/
       color:#006600;
 }
+
+.modal-header{
+border-bottom: none;
+}
+
 button {
     border: 1px solid #00cc00;
     background: #222;
@@ -76,6 +82,10 @@ button {
 .error {
     color: #00cc00;
 }
+.split-panel .split-panel-section.split-panel-divider:first-child{
+border-right: 1px solid #00cc00
+}
+
 .infobar.welcome, .nub {
     display: none!important;
 }
@@ -85,8 +95,9 @@ body.wiki-page {
 }
 .comment-visits-box .title, .sr-bar a.gold, .flat-list li a.gold, .user .userkarma, .comment .author, .pref-lang {
     font-weight: normal;
+    color: #00cc00!important;
 }
-#header {
+#header, .linkinfo,.modal-content, .message-count {
     background-color: #222;
     border: none;
 }
@@ -102,10 +113,7 @@ body.wiki-page {
     background-color: #222;
     border: 2px solid #006600;
 }
-#header #sr-header-area .drop-choices a.choice {
-    background-color: #222;
-}
-#header #sr-header-area #sr-more-link, .file{
+#header #sr-header-area .drop-choices a.choice,#header #sr-header-area #sr-more-link, .file, .multi-selector, .hover-bubble, .anchor-right,.hover-bubble.multi-selector .create-multi input[type="text"],.hover-bubble.multi-selector label a {
     background-color: #222;
 }
 #header #sr-header-area .srdrop .choice.bottom-option {
@@ -139,9 +147,19 @@ body.wiki-page {
     font-size: 3em;
     font-weight: normal;
 }
-#header-img-a:visited {
-    color: #00cc00;
+#header-img-a:visited,.multi-selector, .hover-bubble, .anchor-right,body > div.multi-selector.hover-bubble.anchor-right > div.title > strong {
+    color: #00cc00!important;
 }
+
+div.multi-selector.hover-bubble.anchor-right, .hover-bubble.multi-selector label a{
+border: 1px solid #00cc00;
+}
+
+.hover-bubble.multi-selector label:hover{
+background-color: #00cc00;
+color:#222;
+}
+
 #header-bottom-left .redditname a {
     color: #00cc00;
     font-weight: normal;
@@ -200,11 +218,11 @@ body.wiki-page {
     margin: 10px 0px;
     padding: 10px 0px;
     color: #00cc00;
-    content: "/r/EliteShell 2.0 by /u/mos_6502";
-   /* Please, don't mess with this. I worked hard to make this theme awesome, and
+    content: "/r/EliteShell 2.4 by /u/mos_6502";
+   /* Please, don't mess with this. I worked hard to make this theme awesome, and 
     * I'd like others to be able to as well. Keeping this in lets others find and contribute
     * to the theme, making it better :)
-    * <3, /u/mos_6502
+    * <3, /u/mos_6502 
     */
 }
 
@@ -234,16 +252,13 @@ body.wiki-page {
     display: none;
 }
 
-.users-online:before {
-    display: none;
-}
-
 .subscribers .number:after {
-    content: " total subscribers."}
+    content: " subscribers."}
 
 .users-online:before {
     display: none;
 }
+
 .users-online .number:after {
     content: " currently online.";
 }
@@ -256,7 +271,9 @@ body.wiki-page {
     display: none;
 }
 .debuginfo .content:before {
-    content: "π "}
+    content: "π "
+}
+
 .debuginfo .content {
     display: inline-block;
     position: absolute;
@@ -276,6 +293,14 @@ body.wiki-page {
     border-bottom: 2px solid #00cc00;
     padding: 5px 5px 5px 5px;
 }
+
+body > div.side > div:nth-child(5) > div > h1 > a:after {
+    font-size: 13px;
+    content: "█";
+    -webkit-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+
 .side .spacer {
     margin: 0px;
     padding: 0px;
@@ -295,9 +320,17 @@ body.wiki-page {
 .side .titlebox .usertext-body .md hr {
     background-color:#222;
 }
- .side #search, .side .titlebox .redditname, .side .titlebox form.toggle, .side .titlebox .leavemoderator, .side .sidebox, .side .titlebox .bottom, .side .sidecontentbox, .side .account-activity-box, .search, .searchexpando, .infobar, input, .title-field, .url-field, .reddit-field, .spacer, .roundfield .info-notice, .icon-menu a, .sidebox .spacer, .sidebox .subtitle{
+ .side #search, .side .titlebox .redditname, .side .titlebox form.toggle, .side .titlebox .leavemoderator, .side .sidebox, .side .titlebox .bottom, .side .sidecontentbox, .side .account-activity-box, .search, .searchexpando, .infobar, input, .title-field, .url-field, .reddit-field, .spacer, .roundfield .info-notice, .icon-menu a, .sidebox .spacer, .sidebox .subtitle, .c-btn-primary{
     background-color:#222;
     color:#00cc00;
+} 
+
+.c-btn{
+border: none;
+}
+
+.c-btn:hover{
+background-color: #222;
 }
 
 .titlebox h1 a, .submit_text h1 {
@@ -349,9 +382,9 @@ body.wiki-page {
 
 ul, li{color:#00cc00;}
 
-.morelink:hover, .morelink, .mlh{color: #006600;border-color: #00cc00; background-image:none;}
+.morelink:hover, .morelink, .mlh{color: #00cc00;border-color: #00cc00; background-image:none;}
 
-.morelink a:hover{color: #006600;border-color: #00cc00; background-image:none; background-color:#00cc00;}
+.morelink a:hover{color: #006600!important;border-color: #00cc00; background-image:none; background-color:#00cc00;}
 
 .side .usertext-body .md h1 a, .side .usertext-body .md h2 a, .side .usertext-body .md h3 a, .side .usertext-body .md h4 a, .side .usertext-body .md h5 a, .side .usertext-body .md h6 a, .side .usertext-body .md blockquote a, .morelink a {
     display: block;
@@ -406,7 +439,7 @@ ul, li{color:#00cc00;}
     color: #00cc00;
 }
 .linklisting ul.flat-list.buttons li.share, .linklisting ul.flat-list.buttons .save-button, .linklisting ul.flat-list.buttons .hide-button, .linklisting ul.flat-list.buttons .report-button {
-    display: none;
+    
 }
 .link.last-clicked {
     border: none;
@@ -489,8 +522,8 @@ hr {
     color: #00cc00;
 }
 .comment .expand:hover {
-    background: #00cc00;
-    color: #006600;
+    color: red!important;
+    text-decoration: none;
 }
 .usertext.grayed .usertext-body {
     background: none;
@@ -699,7 +732,7 @@ hr {
     width: 90%}
 
 textarea {border: 1px solid #00cc00 !important;}
-textarea, input{color: #00cc00;background-color: #222;}
+textarea, input,.c-form-control{color: #00cc00;background-color: #222;}
 
 /* Let's get this party started */
 ::-webkit-scrollbar {
@@ -708,9 +741,7 @@ textarea, input{color: #00cc00;background-color: #222;}
  
 /* Track */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    background: rgba(34, 34, 34, 1)
 }
  
 /* Handle */
@@ -726,7 +757,7 @@ textarea, input{color: #00cc00;background-color: #222;}
 .rank, body >.content .link .rank, .rank-spacer, .tagline, .commentarea .menuarea .toggle a,.gadget small, .gray{color: #007A00;}
 
 .flair, .linkflairlabel {color:#00cc00; border: 1px solid #00cc00; background-color: #222;}
-
+span.userattrs > a{color:red!important;}
 #moresearchinfo{border:1px solid #00cc00;}
 
 .flairselector, .flairselector h2, .flairselector.drop-choices.active{background:#222; box-shadow:none; border: 1px solid #00cc00}
@@ -772,11 +803,11 @@ body.wiki-page{background-color:#222}
 .wiki-page .wiki-page-content #wiki_revision_reason{width:86%}
 textarea{max-width:86%}
 .content .infobar{width:60%}
-.linefield{color:#00cc00;}
+.linefield,.c-form-control{color:#00cc00;}
 .wiki-page .wiki-page-content .md{color: #00cc00;}
 .wiki-page .pageactions .wikiaction-current{color: #00cc00; background-color:#006600;}
 .wiki-page .pageactions .wikiaction:hover{color:#006600; background-color:#00cc00;}
-input[type=submit], input[name=username], input[name=reason], .img-name{border:1px solid #00cc00;}
+input[type=submit], input[name=username], input[name=reason], .img-name,.c-form-control{border:1px solid #00cc00;}
 input[type=file]{background-color:#001A00;}
 .wiki-page .pageactions{border: 2px solid #00cc00;}
 .wiki-page .wiki-page-content .wikirevisionlisting .generic-table{max-width:87%;}
@@ -806,9 +837,28 @@ input[type=file]{background-color:#001A00;}
 .cover{background-color:#000;}
 .login-form-section>h3{color:#00cc00!important;}
 
-/* I'm all for supporting Reddit, but this is somewhat intrusive.
- * Sorry, but this disrupts my theme a lot :/
- * MOD NOTE: If you want to enable the little ad at the top of the subreddit page, remove the .sponsorshipbox... CSS below.
+/* Fantastic bit of CSS from /r/netsec */
+.commentarea div.usertext-body a:hover:after, .self .usertext-body a:hover:after {
+    position: absolute;
+    padding: 2px;
+    border: 1px solid #00cc00;
+    background: #333;
+    content: "Signal";
+    text-align: center;
+    font-weight: normal;
+    font-size: 11px;
+    color: #00cc00;
+    margin-left: 1px;
+    margin-top: 15px;
+    margin-bottom: 60px !important;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    content: " " attr(href) " ";
+}
+
+/* I'm all for supporting you guys, but this is somewhat intrusive. 
+ * Sorry, but this disrupts the purity of my theme :/
  */
 .sponsorshipbox{visibility:hidden!important; display:none!important;}
 
@@ -816,3 +866,16 @@ input[type=file]{background-color:#001A00;}
 #header-bottom-left .tabmenu li a{border:none;}
 #header-bottom-left .tabmenu .selected{border:none;}
 #header-bottom-left .tabmenu li.selected a{border-bottom:2px solid #00cc00;}
+
+@-webkit-keyframes blink {
+    25%  {color: #00cc00;}
+    50%  {color: #222;}
+    100% {color: #222;}
+}
+
+@keyframes blink {
+    25%  {color: #00cc00;}
+    50%  {color: #222;}
+    100% {color: #222;}
+}
+
