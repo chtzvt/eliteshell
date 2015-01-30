@@ -79,7 +79,7 @@ button {
 :-ms-input-placeholder {
     color: #00cc00;
 }
-.error, p {
+.error, p, .md, .md h6, .usertext-edit textarea, .usertext-edit textarea h6, input[type="text"]{
     color: #00cc00;
 }
 .split-panel .split-panel-section.split-panel-divider:first-child{
