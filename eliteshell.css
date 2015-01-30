@@ -79,7 +79,7 @@ button {
 :-ms-input-placeholder {
     color: #00cc00;
 }
-.error {
+.error, p {
     color: #00cc00;
 }
 .split-panel .split-panel-section.split-panel-divider:first-child{
