@@ -1,4 +1,4 @@
-/* EliteShell theme for Reddit version 1.0 by /u/mos_6502.
+/* EliteShell theme for Reddit version 2.4 by /u/mos_6502.
  * Based on the stylesheet of /r/nameaserver.
  * Find out more on /r/EliteShell.
  
@@ -10,6 +10,9 @@
  * -Minor tweak to visited link color
  * Fixed various itemd on to do list.
  * Fixed search! Was messed up earlier. 
+ 
+ * Jan 29 2015
+ * -Fixed various bugs caused by sitewide stylesheet change (read: text)
  
  * TO DO: 
  * RES "Show images" button gone? (idk what that is, user hasn't supplied any images.)
@@ -1046,9 +1049,9 @@ input[type=file]
 	background: transparent!important;
 }
 
-.md pre, code
-{
-	background-color: #2E2E2B;
+.md pre, code{
+	background-color: #2E2E2B!important;
+        border: 1px solid #00cc00;
 }
 
 .searchpane
