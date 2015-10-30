@@ -1,41 +1,13 @@
-Welcome to /r/EliteShell!
+# EliteShell!
 
-What is EliteShell?
+[EliteShell](https://www.reddit.com/r/eliteshell) is a cool theme based on the theme used by [/r/nameaserver](https://www.reddit.com/r/nameaserver). It's an awesome, minimal, easy to use, customisable, and generally really cool looking theme for your subreddit with a large focus on text. While it's is made primarily for subreddits involving computers, it can be used just about anywhere you want a cool "homebrew" look.
 
-EliteShell is a cool theme based on the theme seen in /r/nameaserver. It's an awesome, minimal, easy to use, and really cool looking theme for your subreddit with a large focus on text.
+If you're using Elite Shell in your subreddit, please [make a post](https://www.reddit.com/r/eliteshell/submit?title=/r/YourSub%20is%20using%20EliteShell!) and tell me about it! I love to see how ES is being used.
 
-EliteShell is made primarily for subreddits involving computers, however, it can be used just about anywhere you want a cool "homebrew" look. The goal of this theme is to provide a very minimalistic, yet custom and appropriate look to such subreddits.
+## Installation
 
-If you'd like to use EliteShell in your subreddit, you can download and install the latest version from the link in the sidebar.
+1. Download the images ([sprites.png](https://raw.githubusercontent.com/ctrezevant/eliteshell/master/sprites.png) and [expando.png](https://raw.githubusercontent.com/ctrezevant/eliteshell/master/expando.png)) and upload them to your subreddit's stylesheet page, without changing the filenames.
 
-If you're using Elite Shell in your subreddit, please make a post here and tell me about it! I love to see how ES is being used.
+2. Simply copy the contents of the [CSS file](https://github.com/ctrezevant/eliteshell/blob/master/eliteshell.css) into the relevant box on your subreddit's stylesheet page.
 
-Bug reports, questions, comments, and contributions are all welcome!
-
-Thanks for visiting, and I hope you enjoy Elite Shell!
-
------------------------------------------INSTALLATION-----------------------------------------
-
-To install, download the images (spritesheet.png and expando.png) and upload them into your subreddit's stylesheet page, without changing the filenames.
-
-Then, simply copy the contents of the CSS file (linked to on the sidebar) into your subreddit's stylesheet page.
-
-It's that simple! Enjoy EliteShell!
-
-------------------ENABLING/DISABLING EXPANDO BUTTONS--------------------
-
-If you'd like to enable the expando buttons on your subreddit ([these]), then you can do that very easily.
-
-First, make sure that expando.png is uploaded into your subreddit.
-
-Then, using the search function of your browser (Usually Ctrl+F, or Command+F on Macs), search for "#enable-expando-buttons" (without the quotes).
-
-That will take you to the part of the CSS concerning the expando button. There, you must remove one line of code. Don't worry, though! It's only one line, and there's a detailed explanation on how to do it :)
-
------------------------------------------UPDATES-----------------------------------------
-
-Updates will happen periodically, as new features arrive and bugs are brought to my attention.
-
-To stay up to date on new features and updates, I recommend subscribing to this subreddit. Here, I'll post all news and updates to EliteShell.
-
-Thanks for visiting, and enjoy Elite Shell!
+3. It's that simple! Enjoy EliteShell!
