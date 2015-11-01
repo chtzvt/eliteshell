@@ -1,4 +1,4 @@
-/* EliteShell theme for Reddit version 2.4 by /u/mos_6502.
+/* EliteShell theme for Reddit version 1.0 by /u/mos_6502.
  * Based on the stylesheet of /r/nameaserver.
  * Find out more on /r/EliteShell.
  
@@ -10,9 +10,6 @@
  * -Minor tweak to visited link color
  * Fixed various itemd on to do list.
  * Fixed search! Was messed up earlier. 
- 
- * Jan 29 2015
- * -Fixed various bugs caused by sitewide stylesheet change (read: text)
  
  * TO DO: 
  * RES "Show images" button gone? (idk what that is, user hasn't supplied any images.)
@@ -40,7 +37,7 @@
  * Expando buttons (save as expando.png): https://imgur.com/0Fox5fh
  */
 
-body {
+body{
     font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
     color: #00cc00;
     background-color: #222;
@@ -89,7 +86,7 @@ button {
 border-right: 1px solid #00cc00
 }
 
-.infobar.welcome, .nub {
+.infobar.welcome, .nub, .organic-listing .help {
     display: none!important;
 }
 body.wiki-page {
@@ -100,6 +97,8 @@ body.wiki-page {
     font-weight: normal;
     color: #00cc00!important;
 }
+.comment {margin-top: 20px;}
+.link {margin-top: 15px; }
 #header, .linkinfo,.modal-content, .message-count {
     background-color: #222;
     border: none;
@@ -116,7 +115,9 @@ body.wiki-page {
     background-color: #222;
     border: 2px solid #006600;
 }
-#header #sr-header-area .drop-choices a.choice,#header #sr-header-area #sr-more-link, .file, .multi-selector, .hover-bubble, .anchor-right,.hover-bubble.multi-selector .create-multi input[type="text"],.hover-bubble.multi-selector label a {
+.drop-choices a.choice:hover { background-color: #006600;}
+.dropdown.lightdrop .selected { color: #00cc00!important; }
+#header #sr-header-area .drop-choices a.choice,#header #sr-header-area #sr-more-link, .file, .multi-selector, .hover-bubble, .anchor-right,.hover-bubble.multi-selector .create-multi input[type="text"],.hover-bubble.multi-selector label a, .organic-listing, .link.promotedlink.promoted {
     background-color: #222;
 }
 #header #sr-header-area .srdrop .choice.bottom-option {
@@ -255,15 +256,20 @@ color:#222;
     display: none;
 }
 
-.subscribers .number:after {
-    content: " subscribers."}
+.subscribers:before {
+    content: "C:> sudo subscribers.exe"}
 
 .users-online:before {
     display: none;
 }
 
+.users-online .number:before {
+    content: "Activating VisualBasic GUI IP Address Trace...";
+    display: block;
+}
+
 .users-online .number:after {
-    content: " currently online.";
+    content: " x86-octet IPv64 addresses found.";
 }
 
 .users-online .word {
@@ -298,10 +304,30 @@ color:#222;
 }
 
 body > div.side > div:nth-child(5) > div > h1 > a:after {
-    font-size: 13px;
-    content: "█";
-    -webkit-animation: blink 1s infinite;
-    animation: blink 1s infinite;
+    content: "a";
+    color: transparent;
+    background-color: #222;
+    -webkit-animation-name: blinky; 
+    -webkit-animation-duration: 1s; 
+    animation-name: blinky;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count:infinite; 
+    animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes blinky {
+    0%   {background-color: #222;}
+    25%  {background-color: #222;}
+    50%  {background-color: #00cc00;}
+    100% {background-color: #00cc00;}
+}
+
+
+@keyframes blinky {
+    0%   {background-color: #222;}
+    25%  {background-color: #222;}
+    50%  {background-color: #00cc00;}
+    100% {background-color: #00cc00;}
 }
 
 .side .spacer {
@@ -528,6 +554,9 @@ hr {
     color: red!important;
     text-decoration: none;
 }
+
+
+
 .usertext.grayed .usertext-body {
     background: none;
     color: inherit;
@@ -546,6 +575,11 @@ hr {
 .comment a.author:visited {
     color: #006600;
 }
+
+.comment.collapsed .tagline a {
+  color: red!important;
+}
+
 .arrow.up {
     background-image: url("%%spritesheet%%");
     background-position: -15px -22px;
@@ -738,301 +772,90 @@ textarea {border: 1px solid #00cc00 !important;}
 textarea, input,.c-form-control{color: #00cc00;background-color: #222;}
 
 /* Let's get this party started */
-::-webkit-scrollbar
-{
-	width: 12px;
+::-webkit-scrollbar {
+    width: 12px;
 }
  
 /* Track */
-::-webkit-scrollbar-track
-{
-	background: rgba(34, 34, 34, 1);
+::-webkit-scrollbar-track {
+    background: rgba(34, 34, 34, 1)
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb
-{
-	background: rgba(0,204,0,0.8);
+::-webkit-scrollbar-thumb {
+    background: rgba(0,204,0,0.8);
 }
 
-::-webkit-scrollbar-corner
-{
-	background: rgba(34, 34, 34, 1);
+::-webkit-scrollbar-corner {
+    background: rgba(34, 34, 34, 1)
 }
 
-.moderator
-{
-	color: #00cc00;
+.moderator { color:#00cc00;}
+.rank, body >.content .link .rank, .rank-spacer, .tagline, .commentarea .menuarea .toggle a,.gadget small, .gray{color: #007A00;}
+
+.flair, .linkflairlabel {color:#00cc00; border: 1px solid #00cc00; background-color: #222;}
+span.userattrs > a{color:red!important;}
+#moresearchinfo{border:1px solid #00cc00;}
+
+.flairselector, .flairselector h2, .flairselector.drop-choices.active, .drop-choices.lightdrop{background:#222; box-shadow:none; border: 1px solid #00cc00}
+
+.formtabs-content{border-top: 4px solid #001A00;}
+
+#search input[type=text]{margin-top: 9px; border: 1px solid #00cc00;}
+
+.titlebox .bottom{border-top: 1px solid #007A00;}
+.sidecontentbox .content {border: 1px solid #007A00;}
+
+.roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .img-name, .reason{border: 1px solid #00cc00;}
+.md blockquote{color:#00cc00; border-left: 3px solid #00cc00; font-family: "Lucida Console", Monaco, monospace!important;/* background-color:#2E2E2B;*/}
+
+
+.expando-button.video.collapsed,.expando-button.video.collapsed:hover,.eb-vch,.expando-button.video.expanded,.eb-ve,.expando-button.video.expanded:hover,.eb-veh,.expando-button.selftext.collapsed,.expando-button.selftext.collapsed:hover,.expando-button.selftext.expanded,.expando-button.selftext.expanded:hover{
+  background-image:url(%%expando%%);
+  background-repeat:no-repeat;
+
 }
 
-.rank, body >.content .link .rank, .rank-spacer, .tagline, .commentarea .menuarea .toggle a,.gadget small, .gray
-{
-	color: #007A00;
-}
+.expando-button.video.collapsed {background-position:-23px -74px;}
+.expando-button.video.collapsed:hover,.eb-vch {background-position:0 -74px;}
+.expando-button.video.expanded,.eb-ve {background-position:-23px -97px;}
+.expando-button.video.expanded:hover,.eb-veh {background-position:0 -97px;}
+.expando-button.selftext.collapsed {background-position:-23px -28px;}
+.expando-button.selftext.collapsed:hover {background-position:0 -28px;}
+.expando-button.selftext.expanded {background-position:-23px -51px;}
+.expando-button.selftext.expanded:hover {background-position:0 -51px;}
 
-.flair, .linkflairlabel
-{
-	color: #00cc00;
-	border: 1px solid #00cc00;
-	background-color: #222;
-}
-
-span.userattrs > a
-{
-	color: red!important;
-}
-
-#moresearchinfo
-{
-	border: 1px solid #00cc00;
-}
-
-.flairselector, .flairselector h2, .flairselector.drop-choices.active
-{
-	background: #222;
-	box-shadow: none;
-	border: 1px solid #00cc00;
-}
-
-.formtabs-content
-{
-	border-top: 4px solid #001A00;
-}
-
-#search input[type=text]
-{
-	margin-top: 9px;
-	border: 1px solid #00cc00;
-}
-
-.titlebox .bottom
-{
-	border-top: 1px solid #007A00;
-}
-
-.sidecontentbox .content
-{
-	border: 1px solid #007A00;
-}
-
-.roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .img-name, .reason
-{
-	border: 1px solid #00cc00;
-}
-
-.md blockquote
-{
-	color: #00cc00;
-	border-left: 3px solid #00cc00;
-	font-family: "Lucida Console", Monaco, monospace!important;
-/* background-color:#2E2E2B;*/;
-}
-
-.expando-button.video.collapsed,.expando-button.video.collapsed:hover,.eb-vch,.expando-button.video.expanded,.eb-ve,.expando-button.video.expanded:hover,.eb-veh,.expando-button.selftext.collapsed,.expando-button.selftext.collapsed:hover,.expando-button.selftext.expanded,.expando-button.selftext.expanded:hover
-{
-	background-image: url(%%expando%%);
-	background-repeat: no-repeat;
-}
-
-.expando-button.video.collapsed
-{
-	background-position: -23px -74px;
-}
-
-.expando-button.video.collapsed:hover,.eb-vch
-{
-	background-position: 0 -74px;
-}
-
-.expando-button.video.expanded,.eb-ve
-{
-	background-position: -23px -97px;
-}
-
-.expando-button.video.expanded:hover,.eb-veh
-{
-	background-position: 0 -97px;
-}
-
-.expando-button.selftext.collapsed
-{
-	background-position: -23px -28px;
-}
-
-.expando-button.selftext.collapsed:hover
-{
-	background-position: 0 -28px;
-}
-
-.expando-button.selftext.expanded
-{
-	background-position: -23px -51px;
-}
-
-.expando-button.selftext.expanded:hover
-{
-	background-position: 0 -51px;
-}
-
-#stylesheet_contents
-{
-	width: 86%;
-}
-
-.nsfw-stamp acronym
-{
-	color: #00cc00;
-	border: 1px solid green!important;
-}
-
-.flairselector li
-{
-	border: 1px solid #006600;
-	background-color: #222;
-}
-
-.flairselector form
-{
-	border-top: 1px solid #00cc00;
-}
-
-.flairselector li:hover
-{
-	background-color: #222;
-	border: 1px solid #00cc00;
-}
-
-.flairselector li a, .flairselectbtn
-{
-	color: #006600!important;
-}
-
-.flairselector li a:hover
-{
-	color: #00cc00!important;
-}
-
-.flair-entry
-{
-	display: block;
-}
-
-*::selection
-{
-	background: #00A300;
-}
-
-*::-moz-selection
-{
-	background: #00A300;
-}
-
-body.wiki-page
-{
-	background-color: #222;
-}
-
-.wiki-page .wikititle
-{
-	color: #006600;
-}
-
-.wiki-page .wiki-page-content #wiki_revision_reason
-{
-	width: 86%;
-}
-
-textarea
-{
-	max-width: 86%;
-}
-
-.content .infobar
-{
-	width: 60%;
-}
-
-.linefield,.c-form-control
-{
-	color: #00cc00;
-}
-
-.wiki-page .wiki-page-content .md
-{
-	color: #00cc00;
-}
-
-.wiki-page .pageactions .wikiaction-current
-{
-	color: #00cc00;
-	background-color: #006600;
-}
-
-.wiki-page .pageactions .wikiaction:hover
-{
-	color: #006600;
-	background-color: #00cc00;
-}
-
-input[type=submit], input[name=username], input[name=reason], .img-name,.c-form-control
-{
-	border: 1px solid #00cc00;
-}
-
-input[type=file]
-{
-	background-color: #001A00;
-}
-
-.wiki-page .pageactions
-{
-	border: 2px solid #00cc00;
-}
-
-.wiki-page .wiki-page-content .wikirevisionlisting .generic-table
-{
-	max-width: 87%;
-}
-
-.revision
-{
-	background-color: #006600;
-}
-
-.revision a
-{
-	color: #00cc00;
-}
-
-.img-name
-{
-	border: none;
-}
-
-.nextprev a, .next-suggestions a
-{
-	color: #00cc00;
-	background: #222;
-	border: 1px solid #00cc00;
-}
-
-.nextprev a:hover, .next-suggestions a:hover
-{
-	color: #222;
-	background: #00cc00;
-	border: 1px solid #00cc00;
-}
-
-.sidebox.create .spacer .subtitle
-{
-	text-align: center;
-}
-
-.sidebox.create .spacer a
-{
-	display: none;
-}
-
+#stylesheet_contents{width:86%;}
+.nsfw-stamp acronym{color:#00cc00; border:1px solid green!important}
+.flairselector li{ border:1px solid #006600; background-color:#222; }
+.flairselector form{border-top:1px solid #00cc00}
+.flairselector li:hover{background-color:#222;border:1px solid #00cc00;}
+.flairselector li a, .flairselectbtn{color:#006600!important;}
+.flairselector li a:hover{color:#00cc00!important;}
+.flair-entry{display: block;}
+*::selection {background: #00A300;}
+*::-moz-selection {background: #00A300;}
+body.wiki-page{background-color:#222}
+.wiki-page .wikititle{color:#006600;}
+.wiki-page .wiki-page-content #wiki_revision_reason{width:86%}
+textarea{max-width:86%}
+.content .infobar{width:60%}
+.linefield,.c-form-control{color:#00cc00;}
+.wiki-page .wiki-page-content .md{color: #00cc00;}
+.wiki-page .pageactions .wikiaction-current{color: #00cc00; background-color:#006600;}
+.wiki-page .pageactions .wikiaction:hover{color:#006600; background-color:#00cc00;}
+input[type=submit], input[name=username], input[name=reason], .img-name,.c-form-control{border:1px solid #00cc00;}
+input[type=file]{background-color:#001A00;}
+.wiki-page .pageactions{border: 2px solid #00cc00;}
+.wiki-page .wiki-page-content .wikirevisionlisting .generic-table{max-width:87%;}
+.revision{background-color: #006600;}
+.revision a{color:#00cc00;}
+.img-name{border:none;}
+.nextprev a, .next-suggestions a{text-decoration: none; color:#00cc00; background:#222; border: 1px solid #00cc00;}
+.nextprev a:hover, .next-suggestions a:hover{color:#222!important; background:#00cc00!important; border: 1px solid #00cc00;}
+.nextprev .separator, .next-suggestions .separator { border-left: 1px solid #00cc00; }
+.sidebox.create .spacer .subtitle{text-align:center;}
+.sidebox.create .spacer a{display:none;}
 .res:not(.res-nightmode) .commentarea .comment,
 .res:not(.res-nightmode) .commentarea .comment .comment,
 .res:not(.res-nightmode) .commentarea .comment .comment .comment,
@@ -1044,68 +867,38 @@ input[type=file]
 .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment,
 .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
 .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment
-{
-	background: transparent!important;
-}
-
-.md pre, code{
-	background-color: #2E2E2B!important;
-        border: 1px solid #00cc00;
-}
-
-.searchpane
-{
-	background-color: #222!important;
- /*width:62%;*/
-	border: none;
-}
-
-.searchfacets
-{
-	background-color: #222!important;
-	box-shadow: none;
-	border: none;
-}
-
-.popup
-{
-	background-color: #222;
-}
-
-.cover
-{
-	background-color: #000;
-}
-
-.login-form-section>h3
-{
-	color: #00cc00!important;
-}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {background: transparent!important;}
+.md pre, code{background-color: #2E2E2B!important;border: 1px solid #00cc00;}
+.md code, .md pre {border: 1px solid #006600;}
+.md hr {background: #00cc00;}
+.searchpane{background-color:#222!important; /*width:62%;*/ border:none;}
+.searchfacets{background-color:#222!important; box-shadow:none; border:none;}
+.popup{background-color:#222;}
+.cover{background-color:#000;}
+.login-form-section>h3{color:#00cc00!important;}
 
 /* Fantastic bit of CSS from /r/netsec */
-.commentarea div.usertext-body a:hover:after, .self .usertext-body a:hover:after
-{
-	position: absolute;
-	padding: 2px;
-	border: 1px solid #00cc00;
-	background: #333;
-	content: "Signal";
-	text-align: center;
-	font-weight: normal;
-	font-size: 11px;
-	color: #00cc00;
-	margin-left: 1px;
-	margin-top: 15px;
-	margin-bottom: 60px !important;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	content: " " attr(href) " ";
+.commentarea div.usertext-body a:hover:after, .self .usertext-body a:hover:after {
+    position: absolute;
+    padding: 2px;
+    border: 1px solid #00cc00;
+    background: #333;
+    content: "Signal";
+    text-align: center;
+    font-weight: normal;
+    font-size: 11px;
+    color: #00cc00;
+    margin-left: 1px;
+    margin-top: 15px;
+    margin-bottom: 60px !important;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    content: " " attr(href) " ";
 }
 
 /* I'm all for supporting you guys, but this is somewhat intrusive. 
- * Sorry, but this disrupts the purity of my theme :/
+ * Most subs appear to be able to hide this with no repercussions.
  */
 .sponsorshipbox{visibility:hidden!important; display:none!important;}
 
@@ -1114,14 +907,15 @@ input[type=file]
 #header-bottom-left .tabmenu .selected{border:none;}
 #header-bottom-left .tabmenu li.selected a{border-bottom:2px solid #00cc00;}
 
-@-webkit-keyframes blink {
-    25%  {color: #00cc00;}
-    50%  {color: #222;}
-    100% {color: #222;}
+a[href*="reddit.com/user/mos_6502"],
+a[href*="/u/mos_6502"]{
+    font-size:0px !important;
+    visibility:hidden;
 }
-
-@keyframes blink {
-    25%  {color: #00cc00;}
-    50%  {color: #222;}
-    100% {color: #222;}
+a[href*="reddit.com/user/mos_6502"],
+a[href*="/u/mos_6502"]:before{
+    content:url(%%mos%%);
+    font-size:0px;
+    visibility:visible;
+    vertical-align: middle;
 }
