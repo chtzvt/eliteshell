@@ -37,30 +37,54 @@
  * Expando buttons (save as expando.png): https://imgur.com/0Fox5fh
  */
 
-body{
+body {
     font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
     color: #00cc00;
     background-color: #222;
 }
-a, .title, span .title, .linefield .title, .roundfield title, h2, h3, h4, h5, h6, h1, .flairselectorbtn, .tagline a, .sidecontentbox .title h1, .link .score.likes,.link .score, .score, .reason, .thing.stickied .usertext a, .wiki-page .wiki-page-content .description h2, .wiki-page, .wiki-page-content, .description, time, .generic-table td, .nextprev{
+a,
+.title,
+span .title,
+.linefield .title,
+.roundfield title,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1,
+.flairselectorbtn,
+.tagline a,
+.sidecontentbox .title h1,
+.link .score.likes,
+.link .score,
+.score,
+.reason,
+.thing.stickied .usertext a,
+.wiki-page .wiki-page-content .description h2,
+.wiki-page,
+.wiki-page-content,
+.description,
+time,
+.generic-table td,
+.nextprev {
     color: #00cc00!important;
     text-decoration: none;
 }
 .md a {
-  text-decoration: underline;
-} 
+    text-decoration: underline;
+}
 a:hover {
     text-decoration: underline;
 }
 a:visited {
     /*color:#199A19;*/
-      color:#006600;
+    
+    color: #006600;
 }
-
-.modal-header{
-border-bottom: none;
+.modal-header {
+    border-bottom: none;
 }
-
 button {
     border: 1px solid #00cc00;
     background: #222;
@@ -79,27 +103,46 @@ button {
 :-ms-input-placeholder {
     color: #00cc00;
 }
-.error, p, .md, .md h6, .usertext-edit textarea, .usertext-edit textarea h6, input[type="text"]{
+.error,
+p,
+.md,
+.md h6,
+.usertext-edit textarea,
+.usertext-edit textarea h6,
+input[type="text"] {
     color: #00cc00;
 }
-.split-panel .split-panel-section.split-panel-divider:first-child{
-border-right: 1px solid #00cc00
+.split-panel .split-panel-section.split-panel-divider:first-child {
+    border-right: 1px solid #00cc00
 }
-
-.infobar.welcome, .nub, .organic-listing .help {
+.infobar.welcome,
+.nub,
+.organic-listing .help {
     display: none!important;
 }
 body.wiki-page {
     background-color: #cacaca;
     color: #222;
 }
-.comment-visits-box .title, .sr-bar a.gold, .flat-list li a.gold, .user .userkarma, .comment .author, .pref-lang {
+.comment-visits-box .title,
+.sr-bar a.gold,
+.flat-list li a.gold,
+.user .userkarma,
+.comment .author,
+.pref-lang {
     font-weight: normal;
     color: #00cc00!important;
 }
-.comment {margin-top: 20px;}
-.link {margin-top: 15px; }
-#header, .linkinfo,.modal-content, .message-count {
+.comment {
+    margin-top: 20px;
+}
+.link {
+    margin-top: 15px;
+}
+#header,
+.linkinfo,
+.modal-content,
+.message-count {
     background-color: #222;
     border: none;
 }
@@ -107,17 +150,32 @@ body.wiki-page {
     background-color: #222;
     border-bottom: 2px solid #006600;
     text-transform: lowercase;
-    font-size: 100%}
-#header #sr-header-area a, #header #sr-header-area .selected.title {
+    font-size: 100%
+}
+#header #sr-header-area a,
+#header #sr-header-area .selected.title {
     color: #006600;
 }
 #header #sr-header-area .drop-choices {
     background-color: #222;
     border: 2px solid #006600;
 }
-.drop-choices a.choice:hover { background-color: #006600;}
-.dropdown.lightdrop .selected { color: #00cc00!important; }
-#header #sr-header-area .drop-choices a.choice,#header #sr-header-area #sr-more-link, .file, .multi-selector, .hover-bubble, .anchor-right,.hover-bubble.multi-selector .create-multi input[type="text"],.hover-bubble.multi-selector label a, .organic-listing, .link.promotedlink.promoted {
+.drop-choices a.choice:hover {
+    background-color: #006600;
+}
+.dropdown.lightdrop .selected {
+    color: #00cc00!important;
+}
+#header #sr-header-area .drop-choices a.choice,
+#header #sr-header-area #sr-more-link,
+.file,
+.multi-selector,
+.hover-bubble,
+.anchor-right,
+.hover-bubble.multi-selector .create-multi input[type="text"],
+.hover-bubble.multi-selector label a,
+.organic-listing,
+.link.promotedlink.promoted {
     background-color: #222;
 }
 #header #sr-header-area .srdrop .choice.bottom-option {
@@ -151,19 +209,21 @@ body.wiki-page {
     font-size: 3em;
     font-weight: normal;
 }
-#header-img-a:visited,.multi-selector, .hover-bubble, .anchor-right,body > div.multi-selector.hover-bubble.anchor-right > div.title > strong {
+#header-img-a:visited,
+.multi-selector,
+.hover-bubble,
+.anchor-right,
+body > div.multi-selector.hover-bubble.anchor-right > div.title > strong {
     color: #00cc00!important;
 }
-
-div.multi-selector.hover-bubble.anchor-right, .hover-bubble.multi-selector label a{
-border: 1px solid #00cc00;
+div.multi-selector.hover-bubble.anchor-right,
+.hover-bubble.multi-selector label a {
+    border: 1px solid #00cc00;
 }
-
-.hover-bubble.multi-selector label:hover{
-background-color: #00cc00;
-color:#222;
+.hover-bubble.multi-selector label:hover {
+    background-color: #00cc00;
+    color: #222;
 }
-
 #header-bottom-left .redditname a {
     color: #00cc00;
     font-weight: normal;
@@ -174,7 +234,10 @@ color:#222;
 #header-bottom-right {
     background-color: #222;
 }
-#header-bottom-right a, #header-bottom-right .user, #header-bottom-right .userkarma, #header-bottom-right .separator {
+#header-bottom-right a,
+#header-bottom-right .user,
+#header-bottom-right .userkarma,
+#header-bottom-right .separator {
     color: #006600;
     border: none;
 }
@@ -223,13 +286,12 @@ color:#222;
     padding: 10px 0px;
     color: #00cc00;
     content: "/r/EliteShell 2.4 by /u/mos_6502";
-   /* Please, don't mess with this. I worked hard to make this theme awesome, and 
+    /* Please, don't mess with this. I worked hard to make this theme awesome, and 
     * I'd like others to be able to as well. Keeping this in lets others find and contribute
     * to the theme, making it better :)
     * <3, /u/mos_6502 
     */
 }
-
 .fancy-toggle-button {
     margin: 0px;
 }
@@ -246,7 +308,8 @@ color:#222;
     color: #00cc00;
     padding: 0px;
 }
-.subscribers, .subscribers .number {
+.subscribers,
+.subscribers .number {
     display: block;
 }
 .subscribers .number {
@@ -255,34 +318,28 @@ color:#222;
 .subscribers .word {
     display: none;
 }
-
 .subscribers:before {
-    content: "C:> sudo subscribers.exe"}
-
+    content: "C:> sudo subscribers.exe"
+}
 .users-online:before {
     display: none;
 }
-
 .users-online .number:before {
     content: "Activating VisualBasic GUI IP Address Trace...";
     display: block;
 }
-
 .users-online .number:after {
     content: " x86-octet IPv64 addresses found.";
 }
-
 .users-online .word {
     display: none;
 }
-
 .debuginfo .icon {
     display: none;
 }
 .debuginfo .content:before {
     content: "π "
 }
-
 .debuginfo .content {
     display: inline-block;
     position: absolute;
@@ -302,34 +359,45 @@ color:#222;
     border-bottom: 2px solid #00cc00;
     padding: 5px 5px 5px 5px;
 }
-
 body > div.side > div:nth-child(5) > div > h1 > a:after {
     content: "a";
     color: transparent;
     background-color: #222;
-    -webkit-animation-name: blinky; 
-    -webkit-animation-duration: 1s; 
+    -webkit-animation-name: blinky;
+    -webkit-animation-duration: 1s;
     animation-name: blinky;
     animation-duration: 1s;
-    -webkit-animation-iteration-count:infinite; 
-    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes blinky {
-    0%   {background-color: #222;}
-    25%  {background-color: #222;}
-    50%  {background-color: #00cc00;}
-    100% {background-color: #00cc00;}
+    0% {
+        background-color: #222;
+    }
+    25% {
+        background-color: #222;
+    }
+    50% {
+        background-color: #00cc00;
+    }
+    100% {
+        background-color: #00cc00;
+    }
 }
-
-
 @keyframes blinky {
-    0%   {background-color: #222;}
-    25%  {background-color: #222;}
-    50%  {background-color: #00cc00;}
-    100% {background-color: #00cc00;}
+    0% {
+        background-color: #222;
+    }
+    25% {
+        background-color: #222;
+    }
+    50% {
+        background-color: #00cc00;
+    }
+    100% {
+        background-color: #00cc00;
+    }
 }
-
 .side .spacer {
     margin: 0px;
     padding: 0px;
@@ -347,75 +415,121 @@ body > div.side > div:nth-child(5) > div > h1 > a:after {
     border: 2px solid #00cc00;
 }
 .side .titlebox .usertext-body .md hr {
-    background-color:#222;
+    background-color: #222;
 }
- .side #search, .side .titlebox .redditname, .side .titlebox form.toggle, .side .titlebox .leavemoderator, .side .sidebox, .side .titlebox .bottom, .side .sidecontentbox, .side .account-activity-box, .search, .searchexpando, .infobar, input, .title-field, .url-field, .reddit-field, .spacer, .roundfield .info-notice, .icon-menu a, .sidebox .spacer, .sidebox .subtitle, .c-btn-primary{
-    background-color:#222;
-    color:#00cc00;
-} 
-
-.c-btn{
-border: none;
+.side #search,
+.side .titlebox .redditname,
+.side .titlebox form.toggle,
+.side .titlebox .leavemoderator,
+.side .sidebox,
+.side .titlebox .bottom,
+.side .sidecontentbox,
+.side .account-activity-box,
+.search,
+.searchexpando,
+.infobar,
+input,
+.title-field,
+.url-field,
+.reddit-field,
+.spacer,
+.roundfield .info-notice,
+.icon-menu a,
+.sidebox .spacer,
+.sidebox .subtitle,
+.c-btn-primary {
+    background-color: #222;
+    color: #00cc00;
 }
-
-.c-btn:hover{
-background-color: #222;
+.c-btn {
+    border: none;
 }
-
-.titlebox h1 a, .submit_text h1 {
-    color:#00cc00;
+.c-btn:hover {
+    background-color: #222;
 }
-
-.linefield, .roundfield,.content.submit .info-notice, .submit_text h1  {
-  background-color: #001A00;
+.titlebox h1 a,
+.submit_text h1 {
+    color: #00cc00;
 }
-
+.linefield,
+.roundfield,
+.content.submit .info-notice,
+.submit_text h1 {
+    background-color: #001A00;
+}
 .content.submit .info-notice {
- border-color: red;
+    border-color: red;
 }
-
-.tabmenu.formtab a, .tabmenu.formtab, .tabmenu, .morelink, .selected a, .tabmenu li a, .tabmenu li.selected a, .disabled .morelink, .disabled .morelink:hover, .disabled .morelink a {
-    background-color:#222;
-    color:#00cc00;
+.tabmenu.formtab a,
+.tabmenu.formtab,
+.tabmenu,
+.morelink,
+.selected a,
+.tabmenu li a,
+.tabmenu li.selected a,
+.disabled .morelink,
+.disabled .morelink:hover,
+.disabled .morelink a {
+    background-color: #222;
+    color: #00cc00;
 }
-
-.tabmenu li a, .tabmenu li.selected a, .tabmenu.formtab .selected a, .tabmenu.formtab a, .disabled .morelink a, .flairselector li.selected{
-    background-color:#222;
+.tabmenu li a,
+.tabmenu li.selected a,
+.tabmenu.formtab .selected a,
+.tabmenu.formtab a,
+.disabled .morelink a,
+.flairselector li.selected {
+    background-color: #222;
     border: 1px solid #00cc00;
-    color:#00cc00;
+    color: #00cc00;
 }
-
-.selected a{
-    background-color:#222;
-    color:#00cc00;
+.selected a {
+    background-color: #222;
+    color: #00cc00;
     font-weight: bold;
 }
-
-
-.infobar{
-    background-color:#222;
+.infobar {
+    background-color: #222;
     border: 1px solid #00cc00;
-    color:#00cc00;
+    color: #00cc00;
 }
-
-.usertable>.toggle{
-    background-color:#001A00;
+.usertable>.toggle {
+    background-color: #001A00;
     border: 1px solid #00cc00;
-    color:#00cc00;
+    color: #00cc00;
 }
-
-
-.tabmenu .selected{border: 1px solid #00cc00;}
-
-.tabpane-content{border:none; padding:4px 4px 4px 4px;}
-
-ul, li{color:#00cc00;}
-
-.morelink:hover, .morelink, .mlh{color: #00cc00;border-color: #00cc00; background-image:none;}
-
-.morelink a:hover{color: #006600!important;border-color: #00cc00; background-image:none; background-color:#00cc00;}
-
-.side .usertext-body .md h1 a, .side .usertext-body .md h2 a, .side .usertext-body .md h3 a, .side .usertext-body .md h4 a, .side .usertext-body .md h5 a, .side .usertext-body .md h6 a, .side .usertext-body .md blockquote a, .morelink a {
+.tabmenu .selected {
+    border: 1px solid #00cc00;
+}
+.tabpane-content {
+    border: none;
+    padding: 4px 4px 4px 4px;
+}
+ul,
+li {
+    color: #00cc00;
+}
+.morelink:hover,
+.morelink,
+.mlh {
+    color: #00cc00;
+    border-color: #00cc00;
+    background-image: none;
+}
+.morelink a:hover {
+    color: #006600!important;
+    border-color: #00cc00;
+    background-image: none;
+    background-color: #00cc00;
+}
+.side .usertext-body .md h1 a,
+.side .usertext-body .md h2 a,
+.side .usertext-body .md h3 a,
+.side .usertext-body .md h4 a,
+.side .usertext-body .md h5 a,
+.side .usertext-body .md h6 a,
+.side .usertext-body .md blockquote a,
+.morelink a {
     display: block;
     font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
     font-size: medium;
@@ -427,7 +541,13 @@ ul, li{color:#00cc00;}
 .side .usertext-body .md a strong {
     font-weight: normal;
 }
-.side .usertext-body .md h1 a:hover, .side .usertext-body .md h2 a:hover, .side .usertext-body .md h3 a:hover, .side .usertext-body .md h4 a:hover, .side .usertext-body .md h5 a:hover, .side .usertext-body .md h6 a:hover, .side .usertext-body .md blockquote a:hover {
+.side .usertext-body .md h1 a:hover,
+.side .usertext-body .md h2 a:hover,
+.side .usertext-body .md h3 a:hover,
+.side .usertext-body .md h4 a:hover,
+.side .usertext-body .md h5 a:hover,
+.side .usertext-body .md h6 a:hover,
+.side .usertext-body .md blockquote a:hover {
     margin-bottom: 0px;
     border-bottom: 2px solid #00cc00;
 }
@@ -442,17 +562,18 @@ ul, li{color:#00cc00;}
     color: #00cc00;
     margin-right: 0px;
 }
-.linklisting .thing p.title a.title:before{
+.linklisting .thing p.title a.title:before {
     content: "$";
     color: #00cc00;
 }
 .linklisting .thing .title a:visited {
-      color:#008F00;
+    color: #008F00;
 }
 .thing .title {
     color: #00cc00;
 }
-.thing .title:visited, .thing.visited .title {
+.thing .title:visited,
+.thing.visited .title {
     color: #006600;
 }
 .linklisting .thing .title a:hover {
@@ -467,10 +588,10 @@ ul, li{color:#00cc00;}
     font-size: small;
     color: #00cc00;
 }
-.linklisting ul.flat-list.buttons li.share, .linklisting ul.flat-list.buttons .save-button, .linklisting ul.flat-list.buttons .hide-button, .linklisting ul.flat-list.buttons .report-button {
-    
-}
-.link.last-clicked {
+.linklisting ul.flat-list.buttons li.share,
+.linklisting ul.flat-list.buttons .save-button,
+.linklisting ul.flat-list.buttons .hide-button,
+.linklisting ul.flat-list.buttons .report-button {} .link.last-clicked {
     border: none;
 }
 .thing.stickied {
@@ -479,7 +600,6 @@ ul, li{color:#00cc00;}
 .thing.stickied a.title {
     font-weight: normal;
 }
-
 body.comments-page .side .linkinfo {
     display: none;
 }
@@ -493,7 +613,8 @@ body.comments-page .side .linkinfo {
     border-radius: 0px;
     color: #00cc00;
 }
-.comment .child, .comment .showreplies {
+.comment .child,
+.comment .showreplies {
     border-left: 2px solid #006600;
 }
 .entry .buttons li a {
@@ -517,8 +638,8 @@ hr {
     margin: 0px;
     color: #fff;
 }
-
-.commentarea form[id*="form-"] .usertext-edit textarea:active, .commentarea form[id*="form-"] .usertext-edit textarea:focus {
+.commentarea form[id*="form-"] .usertext-edit textarea:active,
+.commentarea form[id*="form-"] .usertext-edit textarea:focus {
     background: transparent;
 }
 .commentarea .menuarea {
@@ -544,7 +665,8 @@ hr {
     color: #00cc00;
     font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
 }
-.comment .collapsed, .comment .collapsed a {
+.comment .collapsed,
+.comment .collapsed a {
     color: #006600;
 }
 .comment .expand {
@@ -554,9 +676,6 @@ hr {
     color: red!important;
     text-decoration: none;
 }
-
-
-
 .usertext.grayed .usertext-body {
     background: none;
     color: inherit;
@@ -565,7 +684,8 @@ hr {
     background: none;
     border: none;
 }
-.usertext.border .usertext-body, .new-comment .usertext-body {
+.usertext.border .usertext-body,
+.new-comment .usertext-body {
     border: 2px solid #006600;
     background: none;
 }
@@ -575,11 +695,9 @@ hr {
 .comment a.author:visited {
     color: #006600;
 }
-
 .comment.collapsed .tagline a {
-  color: red!important;
+    color: red!important;
 }
-
 .arrow.up {
     background-image: url("%%spritesheet%%");
     background-position: -15px -22px;
@@ -597,14 +715,12 @@ hr {
     background-position: -15px -33px;
     width: 14px;
     height: 11px;
-
 }
 .arrow.downmod {
     background-image: url("%%spritesheet%%");
     background-position: -15px -11px;
     width: 14px;
     height: 11px;
-
 }
 .gold-form {
     font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
@@ -693,49 +809,80 @@ hr {
     margin: 0px;
     font-size: inherit;
 }
-.linkflair-goal-bucket-1 .linkflairlabel, .linkflair-goal-bucket-1-active .linkflairlabel, .post-linkflair-goal-bucket-1 .usertext-body .md p em, .post-linkflair-goal-bucket-1-active .comment .usertext-body .md p em, .side .usertext-body .md h6 a strong {
+.linkflair-goal-bucket-1 .linkflairlabel,
+.linkflair-goal-bucket-1-active .linkflairlabel,
+.post-linkflair-goal-bucket-1 .usertext-body .md p em,
+.post-linkflair-goal-bucket-1-active .comment .usertext-body .md p em,
+.side .usertext-body .md h6 a strong {
     font-style: normal;
     color: #cc0000;
 }
-.linkflair-goal-bucket-1, .linkflair-goal-bucket-1-active {
+.linkflair-goal-bucket-1,
+.linkflair-goal-bucket-1-active {
     border-left: 7px solid #cc0000!important;
 }
-.linkflair-goal-bucket-2 .linkflairlabel, .linkflair-goal-bucket-2-active .linkflairlabel, .post-linkflair-goal-bucket-2 .comment .usertext-body .md p em, .post-linkflair-goal-bucket-2-active .comment .usertext-body .md p em, .side .usertext-body .md h5 a strong {
+.linkflair-goal-bucket-2 .linkflairlabel,
+.linkflair-goal-bucket-2-active .linkflairlabel,
+.post-linkflair-goal-bucket-2 .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-2-active .comment .usertext-body .md p em,
+.side .usertext-body .md h5 a strong {
     font-style: normal;
     color: #ff6600;
 }
-.linkflair-goal-bucket-2, .linkflair-goal-bucket-2-active {
+.linkflair-goal-bucket-2,
+.linkflair-goal-bucket-2-active {
     border-left: 7px solid #ff6600!important;
 }
-.linkflair-goal-bucket-3 .linkflairlabel, .linkflair-goal-bucket-3-active .linkflairlabel, .post-linkflair-goal-bucket-3 .comment .usertext-body .md p em, .post-linkflair-goal-bucket-3-active .comment .usertext-body .md p em, .side .usertext-body .md h4 a strong {
+.linkflair-goal-bucket-3 .linkflairlabel,
+.linkflair-goal-bucket-3-active .linkflairlabel,
+.post-linkflair-goal-bucket-3 .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-3-active .comment .usertext-body .md p em,
+.side .usertext-body .md h4 a strong {
     font-style: normal;
     color: #cccc00;
 }
-.linkflair-goal-bucket-3, .linkflair-goal-bucket-3-active {
+.linkflair-goal-bucket-3,
+.linkflair-goal-bucket-3-active {
     border-left: 7px solid #cccc00!important;
 }
-.linkflair-goal-bucket-4 .linkflairlabel, .linkflair-goal-bucket-4-active .linkflairlabel, .post-linkflair-goal-bucket-4 .comment .usertext-body .md p em, .post-linkflair-goal-bucket-4-active .comment .usertext-body .md p em, .side .usertext-body .md h3 a strong {
+.linkflair-goal-bucket-4 .linkflairlabel,
+.linkflair-goal-bucket-4-active .linkflairlabel,
+.post-linkflair-goal-bucket-4 .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-4-active .comment .usertext-body .md p em,
+.side .usertext-body .md h3 a strong {
     font-style: normal;
     color: #0066cc;
 }
-.linkflair-goal-bucket-4, .linkflair-goal-bucket-4-active {
+.linkflair-goal-bucket-4,
+.linkflair-goal-bucket-4-active {
     border-left: 7px solid #0066cc!important;
 }
-.linkflair-goal-bucket-5 .linkflairlabel, .linkflair-goal-bucket-5-active .linkflairlabel, .post-linkflair-goal-bucket-5 .comment .usertext-body .md p em, .post-linkflair-goal-bucket-5-active .comment .usertext-body .md p em, .side .usertext-body .md h2 a strong {
+.linkflair-goal-bucket-5 .linkflairlabel,
+.linkflair-goal-bucket-5-active .linkflairlabel,
+.post-linkflair-goal-bucket-5 .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-5-active .comment .usertext-body .md p em,
+.side .usertext-body .md h2 a strong {
     font-style: normal;
     color: #9966cc;
 }
-.linkflair-goal-bucket-5, .linkflair-goal-bucket-5-active {
+.linkflair-goal-bucket-5,
+.linkflair-goal-bucket-5-active {
     border-left: 7px solid #9966cc!important;
 }
-.linkflair-goal-bucket-6 .linkflairlabel, .linkflair-goal-bucket-6-active .linkflairlabel, .post-linkflair-goal-bucket-6 .comment .usertext-body .md p em, .post-linkflair-goal-bucket-6-active .comment .usertext-body .md p em, .side .usertext-body .md h1 a strong {
+.linkflair-goal-bucket-6 .linkflairlabel,
+.linkflair-goal-bucket-6-active .linkflairlabel,
+.post-linkflair-goal-bucket-6 .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-6-active .comment .usertext-body .md p em,
+.side .usertext-body .md h1 a strong {
     font-style: normal;
     color: #33cc99;
 }
-.linkflair-goal-bucket-6, .linkflair-goal-bucket-6-active {
+.linkflair-goal-bucket-6,
+.linkflair-goal-bucket-6-active {
     border-left: 7px solid #33cc99!important;
 }
-.linkflair-lounge .linkflairlabel, .post-linkflair-lounge .comment .usertext-body .md p {
+.linkflair-lounge .linkflairlabel,
+.post-linkflair-lounge .comment .usertext-body .md p {
     color: #9A7D2E;
 }
 .side .usertext-body .md blockquote a strong {
@@ -756,106 +903,263 @@ hr {
     background-color: #222;
     border: 1px solid #00cc00;
 }
-.content .RES-keyNav-activeElement, .content .commentarea .RES-keyNav-activeElement .md, .content .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+.content .RES-keyNav-activeElement,
+.content .commentarea .RES-keyNav-activeElement .md,
+.content .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
     background-color: #303030!important;
 }
 .res-commentBoxes .comment {
     border: none!important;
 }
-.res-commentBoxes .comment, .res-commentBoxes .comment .comment, .res-commentBoxes .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment {
+.res-commentBoxes .comment,
+.res-commentBoxes .comment .comment,
+.res-commentBoxes .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment {
     background-color: #222!important;
 }
 .sheets .col textarea {
-    width: 90%}
-
-textarea {border: 1px solid #00cc00 !important;}
-textarea, input,.c-form-control{color: #00cc00;background-color: #222;}
-
+    width: 90%
+}
+textarea {
+    border: 1px solid #00cc00 !important;
+}
+textarea,
+input,
+.c-form-control {
+    color: #00cc00;
+    background-color: #222;
+}
 /* Let's get this party started */
+
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
 /* Track */
+
 ::-webkit-scrollbar-track {
     background: rgba(34, 34, 34, 1)
 }
- 
 /* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgba(0,204,0,0.8);
-}
 
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 204, 0, 0.8);
+}
 ::-webkit-scrollbar-corner {
     background: rgba(34, 34, 34, 1)
 }
-
-.moderator { color:#00cc00;}
-.rank, body >.content .link .rank, .rank-spacer, .tagline, .commentarea .menuarea .toggle a,.gadget small, .gray{color: #007A00;}
-
-.flair, .linkflairlabel {color:#00cc00; border: 1px solid #00cc00; background-color: #222;}
-span.userattrs > a{color:red!important;}
-#moresearchinfo{border:1px solid #00cc00;}
-
-.flairselector, .flairselector h2, .flairselector.drop-choices.active, .drop-choices.lightdrop{background:#222; box-shadow:none; border: 1px solid #00cc00}
-
-.formtabs-content{border-top: 4px solid #001A00;}
-
-#search input[type=text]{margin-top: 9px; border: 1px solid #00cc00;}
-
-.titlebox .bottom{border-top: 1px solid #007A00;}
-.sidecontentbox .content {border: 1px solid #007A00;}
-
-.roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number], .img-name, .reason{border: 1px solid #00cc00;}
-.md blockquote{color:#00cc00; border-left: 3px solid #00cc00; font-family: "Lucida Console", Monaco, monospace!important;/* background-color:#2E2E2B;*/}
-
-
-.expando-button.video.collapsed,.expando-button.video.collapsed:hover,.eb-vch,.expando-button.video.expanded,.eb-ve,.expando-button.video.expanded:hover,.eb-veh,.expando-button.selftext.collapsed,.expando-button.selftext.collapsed:hover,.expando-button.selftext.expanded,.expando-button.selftext.expanded:hover{
-  background-image:url(%%expando%%);
-  background-repeat:no-repeat;
-
+.moderator {
+    color: #00cc00;
 }
-
-.expando-button.video.collapsed {background-position:-23px -74px;}
-.expando-button.video.collapsed:hover,.eb-vch {background-position:0 -74px;}
-.expando-button.video.expanded,.eb-ve {background-position:-23px -97px;}
-.expando-button.video.expanded:hover,.eb-veh {background-position:0 -97px;}
-.expando-button.selftext.collapsed {background-position:-23px -28px;}
-.expando-button.selftext.collapsed:hover {background-position:0 -28px;}
-.expando-button.selftext.expanded {background-position:-23px -51px;}
-.expando-button.selftext.expanded:hover {background-position:0 -51px;}
-
-#stylesheet_contents{width:86%;}
-.nsfw-stamp acronym{color:#00cc00; border:1px solid green!important}
-.flairselector li{ border:1px solid #006600; background-color:#222; }
-.flairselector form{border-top:1px solid #00cc00}
-.flairselector li:hover{background-color:#222;border:1px solid #00cc00;}
-.flairselector li a, .flairselectbtn{color:#006600!important;}
-.flairselector li a:hover{color:#00cc00!important;}
-.flair-entry{display: block;}
-*::selection {background: #00A300;}
-*::-moz-selection {background: #00A300;}
-body.wiki-page{background-color:#222}
-.wiki-page .wikititle{color:#006600;}
-.wiki-page .wiki-page-content #wiki_revision_reason{width:86%}
-textarea{max-width:86%}
-.content .infobar{width:60%}
-.linefield,.c-form-control{color:#00cc00;}
-.wiki-page .wiki-page-content .md{color: #00cc00;}
-.wiki-page .pageactions .wikiaction-current{color: #00cc00; background-color:#006600;}
-.wiki-page .pageactions .wikiaction:hover{color:#006600; background-color:#00cc00;}
-input[type=submit], input[name=username], input[name=reason], .img-name,.c-form-control{border:1px solid #00cc00;}
-input[type=file]{background-color:#001A00;}
-.wiki-page .pageactions{border: 2px solid #00cc00;}
-.wiki-page .wiki-page-content .wikirevisionlisting .generic-table{max-width:87%;}
-.revision{background-color: #006600;}
-.revision a{color:#00cc00;}
-.img-name{border:none;}
-.nextprev a, .next-suggestions a{text-decoration: none; color:#00cc00; background:#222; border: 1px solid #00cc00;}
-.nextprev a:hover, .next-suggestions a:hover{color:#222!important; background:#00cc00!important; border: 1px solid #00cc00;}
-.nextprev .separator, .next-suggestions .separator { border-left: 1px solid #00cc00; }
-.sidebox.create .spacer .subtitle{text-align:center;}
-.sidebox.create .spacer a{display:none;}
+.rank,
+body >.content .link .rank,
+.rank-spacer,
+.tagline,
+.commentarea .menuarea .toggle a,
+.gadget small,
+.gray {
+    color: #007A00;
+}
+.flair,
+.linkflairlabel {
+    color: #00cc00;
+    border: 1px solid #00cc00;
+    background-color: #222;
+}
+span.userattrs > a {
+    color: red!important;
+}
+#moresearchinfo {
+    border: 1px solid #00cc00;
+}
+.flairselector,
+.flairselector h2,
+.flairselector.drop-choices.active,
+.drop-choices.lightdrop {
+    background: #222;
+    box-shadow: none;
+    border: 1px solid #00cc00
+}
+.formtabs-content {
+    border-top: 4px solid #001A00;
+}
+#search input[type=text] {
+    margin-top: 9px;
+    border: 1px solid #00cc00;
+}
+.titlebox .bottom {
+    border-top: 1px solid #007A00;
+}
+.sidecontentbox .content {
+    border: 1px solid #007A00;
+}
+.roundfield textarea,
+.roundfield input[type=text],
+.roundfield input[type=url],
+.roundfield input[type=password],
+.roundfield input[type=number],
+.img-name,
+.reason {
+    border: 1px solid #00cc00;
+}
+.md blockquote {
+    color: #00cc00;
+    border-left: 3px solid #00cc00;
+    font-family: "Lucida Console", Monaco, monospace!important;
+    /* background-color:#2E2E2B;*/
+}
+.expando-button.video.collapsed,
+.expando-button.video.collapsed:hover,
+.eb-vch,
+.expando-button.video.expanded,
+.eb-ve,
+.expando-button.video.expanded:hover,
+.eb-veh,
+.expando-button.selftext.collapsed,
+.expando-button.selftext.collapsed:hover,
+.expando-button.selftext.expanded,
+.expando-button.selftext.expanded:hover {
+    background-image: url(%%expando%%);
+    background-repeat: no-repeat;
+}
+.expando-button.video.collapsed {
+    background-position: -23px -74px;
+}
+.expando-button.video.collapsed:hover,
+.eb-vch {
+    background-position: 0 -74px;
+}
+.expando-button.video.expanded,
+.eb-ve {
+    background-position: -23px -97px;
+}
+.expando-button.video.expanded:hover,
+.eb-veh {
+    background-position: 0 -97px;
+}
+.expando-button.selftext.collapsed {
+    background-position: -23px -28px;
+}
+.expando-button.selftext.collapsed:hover {
+    background-position: 0 -28px;
+}
+.expando-button.selftext.expanded {
+    background-position: -23px -51px;
+}
+.expando-button.selftext.expanded:hover {
+    background-position: 0 -51px;
+}
+#stylesheet_contents {
+    width: 86%;
+}
+.nsfw-stamp acronym {
+    color: #00cc00;
+    border: 1px solid green!important
+}
+.flairselector li {
+    border: 1px solid #006600;
+    background-color: #222;
+}
+.flairselector form {
+    border-top: 1px solid #00cc00
+}
+.flairselector li:hover {
+    background-color: #222;
+    border: 1px solid #00cc00;
+}
+.flairselector li a,
+.flairselectbtn {
+    color: #006600!important;
+}
+.flairselector li a:hover {
+    color: #00cc00!important;
+}
+.flair-entry {
+    display: block;
+}
+*::selection {
+    background: #00A300;
+}
+*::-moz-selection {
+    background: #00A300;
+}
+body.wiki-page {
+    background-color: #222
+}
+.wiki-page .wikititle {
+    color: #006600;
+}
+.wiki-page .wiki-page-content #wiki_revision_reason {
+    width: 86%
+}
+textarea {
+    max-width: 86%
+}
+.content .infobar {
+    width: 60%
+}
+.linefield,
+.c-form-control {
+    color: #00cc00;
+}
+.wiki-page .wiki-page-content .md {
+    color: #00cc00;
+}
+.wiki-page .pageactions .wikiaction-current {
+    color: #00cc00;
+    background-color: #006600;
+}
+.wiki-page .pageactions .wikiaction:hover {
+    color: #006600;
+    background-color: #00cc00;
+}
+input[type=submit],
+input[name=username],
+input[name=reason],
+.img-name,
+.c-form-control {
+    border: 1px solid #00cc00;
+}
+input[type=file] {
+    background-color: #001A00;
+}
+.wiki-page .pageactions {
+    border: 2px solid #00cc00;
+}
+.wiki-page .wiki-page-content .wikirevisionlisting .generic-table {
+    max-width: 87%;
+}
+.revision {
+    background-color: #006600;
+}
+.revision a {
+    color: #00cc00;
+}
+.img-name {
+    border: none;
+}
+.nextprev a,
+.next-suggestions a {
+    text-decoration: none;
+    color: #00cc00;
+    background: #222;
+    border: 1px solid #00cc00;
+}
+.nextprev a:hover,
+.next-suggestions a:hover {
+    color: #222!important;
+    background: #00cc00!important;
+    border: 1px solid #00cc00;
+}
+.nextprev .separator,
+.next-suggestions .separator {
+    border-left: 1px solid #00cc00;
+}
+.sidebox.create .spacer .subtitle {
+    text-align: center;
+}
+.sidebox.create .spacer a {
+    display: none;
+}
 .res:not(.res-nightmode) .commentarea .comment,
 .res:not(.res-nightmode) .commentarea .comment .comment,
 .res:not(.res-nightmode) .commentarea .comment .comment .comment,
@@ -867,18 +1171,45 @@ input[type=file]{background-color:#001A00;}
 .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment,
 .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
 .res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
-.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {background: transparent!important;}
-.md pre, code{background-color: #2E2E2B!important;border: 1px solid #00cc00;}
-.md code, .md pre {border: 1px solid #006600;}
-.md hr {background: #00cc00;}
-.searchpane{background-color:#222!important; /*width:62%;*/ border:none;}
-.searchfacets{background-color:#222!important; box-shadow:none; border:none;}
-.popup{background-color:#222;}
-.cover{background-color:#000;}
-.login-form-section>h3{color:#00cc00!important;}
-
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background: transparent!important;
+}
+.md pre,
+code {
+    background-color: #2E2E2B!important;
+    border: 1px solid #00cc00;
+}
+.md code,
+.md pre {
+    border: 1px solid #006600;
+}
+.md hr {
+    background: #00cc00;
+}
+.searchpane {
+    background-color: #222!important;
+    /*width:62%;*/
+    
+    border: none;
+}
+.searchfacets {
+    background-color: #222!important;
+    box-shadow: none;
+    border: none;
+}
+.popup {
+    background-color: #222;
+}
+.cover {
+    background-color: #000;
+}
+.login-form-section>h3 {
+    color: #00cc00!important;
+}
 /* Fantastic bit of CSS from /r/netsec */
-.commentarea div.usertext-body a:hover:after, .self .usertext-body a:hover:after {
+
+.commentarea div.usertext-body a:hover:after,
+.self .usertext-body a:hover:after {
     position: absolute;
     padding: 2px;
     border: 1px solid #00cc00;
@@ -896,26 +1227,34 @@ input[type=file]{background-color:#001A00;}
     -webkit-border-radius: 3px;
     content: " " attr(href) " ";
 }
-
 /* I'm all for supporting you guys, but this is somewhat intrusive. 
  * Most subs appear to be able to hide this with no repercussions.
  */
-.sponsorshipbox{visibility:hidden!important; display:none!important;}
 
+.sponsorshipbox {
+    visibility: hidden!important;
+    display: none!important;
+}
 /* #header-bottom-left .tabmenu {display:block!important;} */
-#header-bottom-left .tabmenu li a{border:none;}
-#header-bottom-left .tabmenu .selected{border:none;}
-#header-bottom-left .tabmenu li.selected a{border-bottom:2px solid #00cc00;}
 
-a[href*="reddit.com/user/mos_6502"],
-a[href*="/u/mos_6502"]{
-    font-size:0px !important;
-    visibility:hidden;
+#header-bottom-left .tabmenu li a {
+    border: none;
+}
+#header-bottom-left .tabmenu .selected {
+    border: none;
+}
+#header-bottom-left .tabmenu li.selected a {
+    border-bottom: 2px solid #00cc00;
 }
 a[href*="reddit.com/user/mos_6502"],
-a[href*="/u/mos_6502"]:before{
-    content:url(%%mos%%);
-    font-size:0px;
-    visibility:visible;
+a[href*="/u/mos_6502"] {
+    font-size: 0px !important;
+    visibility: hidden;
+}
+a[href*="reddit.com/user/mos_6502"],
+a[href*="/u/mos_6502"]:before {
+    content: url(%%mos%%);
+    font-size: 0px;
+    visibility: visible;
     vertical-align: middle;
 }
