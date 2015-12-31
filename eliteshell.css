@@ -29,11 +29,11 @@
 
  * RESOURCES:
  * In this repo:
- * spritesheet.png - general sprites
+ * sprites.png - general sprites
  * expando.png - expando buttons.
  
  * ALTERNATE LINKS TO RESOURCES (it's best to just use the ones in the repo, these are just backups):
- * Spritesheet (save as spritesheet.png): https://imgur.com/bxscGWu
+ * Spritesheet (save as sprites.png): https://imgur.com/bxscGWu
  * Expando buttons (save as expando.png): https://imgur.com/0Fox5fh
  */
 
@@ -98,7 +98,7 @@ button {
 #mail.nohavemail,
 #modmail.havemail,
 #modmail.nohavemail {
-    background-image: url(%%spritesheet%%);
+    background-image: url(%%sprites%%);
     background-repeat: no-repeat
 }
 ::-webkit-input-placeholder {
@@ -664,7 +664,7 @@ hr {
 .arrow.downmod,
 .arrow.up,
 .arrow.upmod {
-    background-image: url(%%spritesheet%%);
+    background-image: url(%%sprites%%);
     width: 14px;
     height: 11px
 }
@@ -1187,7 +1187,7 @@ a[href*="/u/mos_6502"] {
 }
 a[href*="reddit.com/user/mos_6502"],
 a[href*="/u/mos_6502"]:before {
-    content: url(%%mos%%);
+    /*! content: url(%%mos%%);  This breaks the CSS submission, there is no image titled mos in the repo. */
     font-size: 0;
     visibility: visible;
     vertical-align: middle
