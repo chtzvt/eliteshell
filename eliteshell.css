@@ -214,7 +214,7 @@ body.wiki-page {
     margin: 0
 }
 #header-img.default-header {
-    background-image: url(https://b.thumbs.redditmedia.com/jJvwY-5wBxPm_7JkUB_jI5u8fqXVvWtzu7V2ngjuITI.png)!important;
+    background-image: url(%%blank%%)!important;
     font-size: 0!important;
     display: inline!important
 }
