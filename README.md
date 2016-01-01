@@ -6,7 +6,7 @@ If you're using Elite Shell in your subreddit, please [make a post](https://www.
 
 ## Installation
 
-1. Download the images ([sprites.png](https://raw.githubusercontent.com/ctrezevant/eliteshell/master/sprites.png) and [expando.png](https://raw.githubusercontent.com/ctrezevant/eliteshell/master/expando.png)) and upload them to your subreddit's stylesheet page, without changing the filenames.
+1. Download the images ([sprites.png](https://raw.githubusercontent.com/ctrezevant/eliteshell/master/sprites.png), [blank.png](https://raw.github.com/ggppjj/eliteshell/blob/master/blank.png) and [expando.png](https://raw.githubusercontent.com/ctrezevant/eliteshell/master/expando.png)) and upload them to your subreddit's stylesheet page, without changing the filenames.
 
 2. Simply copy the contents of the [CSS file](https://github.com/ctrezevant/eliteshell/blob/master/eliteshell.css) into the relevant box on your subreddit's stylesheet page.
 
