@@ -45,9 +45,42 @@ body,
 button {
     font-family: "Andale Mono", "Lucida Console", Monaco, monospace
 }
+.linkflair-goal-bucket-1 .linkflairlabel,
+.linkflair-goal-bucket-1-active .linkflairlabel,
+.linkflair-goal-bucket-2 .linkflairlabel,
+.linkflair-goal-bucket-2-active .linkflairlabel,
+.linkflair-goal-bucket-3 .linkflairlabel,
+.linkflair-goal-bucket-3-active .linkflairlabel,
+.linkflair-goal-bucket-4 .linkflairlabel,
+.linkflair-goal-bucket-4-active .linkflairlabel,
+.linkflair-goal-bucket-5 .linkflairlabel,
+.linkflair-goal-bucket-5-active .linkflairlabel,
+.linkflair-goal-bucket-6 .linkflairlabel,
+.linkflair-goal-bucket-6-active .linkflairlabel,
+.post-linkflair-goal-bucket-1 .usertext-body .md p em,
+.post-linkflair-goal-bucket-1-active .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-2 .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-2-active .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-3 .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-3-active .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-4 .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-4-active .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-5 .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-5-active .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-6 .comment .usertext-body .md p em,
+.post-linkflair-goal-bucket-6-active .comment .usertext-body .md p em,
+.side .usertext-body .md h1 a strong,
+.side .usertext-body .md h2 a strong,
+.side .usertext-body .md h3 a strong,
+.side .usertext-body .md h4 a strong,
+.side .usertext-body .md h5 a strong,
+.side .usertext-body .md h6 a strong {
+    font-style: normal;
+    color: #FFF
+}
 body {
-    color: #0c0;
-    background-color: #222
+    color: silver;
+    background-color: #111
 }
 .description,
 .flairselectorbtn,
@@ -71,11 +104,10 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6,
 span .title,
 time {
-    color: #0c0!important;
+    color: #FFF!important;
     text-decoration: none
 }
 .md a,
@@ -83,34 +115,41 @@ a:hover {
     text-decoration: underline
 }
 a:visited {
-    color: #060
+    color: silver
 }
 .modal-header {
     border-bottom: none
 }
 button {
-    border: 1px solid #0c0;
-    background: #222;
-    color: #0c0!important
+    background: #111;
+    color: silver!important;
+    border: none
 }
-#mail.havemail,
-#mail.nohavemail,
-#modmail.havemail,
-#modmail.nohavemail {
-    background-image: url(%%sprites%%);
-    background-repeat: no-repeat
+.RESDashboardToggle:before,
+button:before {
+    content: "[ "
+}
+.RESDashboardToggle:after,
+button:after {
+    content: " ]"
+}
+.RESshortcutside:after {
+    content: "]"
+}
+.RESshortcutside:before {
+    content: "["
 }
 ::-webkit-input-placeholder {
-    color: #0c0
+    color: silver
 }
 :-moz-placeholder {
-    color: #0c0
+    color: silver
 }
 ::-moz-placeholder {
-    color: #0c0
+    color: silver
 }
 :-ms-input-placeholder {
-    color: #0c0
+    color: silver
 }
 .error,
 .md,
@@ -119,10 +158,10 @@ button {
 .usertext-edit textarea h6,
 input[type=text],
 p {
-    color: #0c0
+    color: silver
 }
 .split-panel .split-panel-section.split-panel-divider:first-child {
-    border-right: 1px solid #0c0
+    border-right: 1px solid silver
 }
 .infobar.welcome,
 .nub,
@@ -130,7 +169,7 @@ p {
     display: none!important
 }
 body.wiki-page {
-    color: #222
+    color: #111
 }
 .comment .author,
 .comment-visits-box .title,
@@ -139,7 +178,7 @@ body.wiki-page {
 .sr-bar a.gold,
 .user .userkarma {
     font-weight: 400;
-    color: #0c0!important
+    color: silver!important
 }
 .comment {
     margin-top: 20px
@@ -151,29 +190,29 @@ body.wiki-page {
 .linkinfo,
 .message-count,
 .modal-content {
-    background-color: #222;
+    background-color: #111;
     border: none;
     height: 90px
 }
 #header #sr-header-area {
-    background-color: #222;
-    border-bottom: 2px solid #060;
+    background-color: #111;
+    border-bottom: 2px solid silver;
     text-transform: lowercase;
     font-size: 100%
 }
 #header #sr-header-area .selected.title,
 #header #sr-header-area a {
-    color: #060
+    color: silver
 }
 #header #sr-header-area .drop-choices {
-    background-color: #222;
-    border: 2px solid #060
+    background-color: #111;
+    border: 2px solid silver
 }
 .drop-choices a.choice:hover {
-    background-color: #060
+    background-color: silver
 }
 .dropdown.lightdrop .selected {
-    color: #0c0!important
+    color: silver!important
 }
 #header #sr-header-area #sr-more-link,
 #header #sr-header-area .drop-choices a.choice,
@@ -185,13 +224,13 @@ body.wiki-page {
 .link.promotedlink.promoted,
 .multi-selector,
 .organic-listing {
-    background-color: #222
+    background-color: #111
 }
 #header #sr-header-area .srdrop .choice.bottom-option {
     border: none
 }
 #header #sr-header-area .sr-bar .separator {
-    color: #060
+    color: silver
 }
 .side:after,
 .subscribers,
@@ -205,23 +244,38 @@ body.wiki-page {
     margin-left: -5px
 }
 #header-bottom-left .redditname:after {
-    content: "$";
-    color: #0c0
+    content: "_";
+    color: silver;
+    animation: blink 1.06s steps(80, start) infinite;
+    -webkit-animation: blink 1.06s steps(80, start) infinite
 }
 #header-img {
     width: 0;
     height: 0;
     margin: 0
 }
+.fancy-toggle-button:before {
+    content: "[ "
+}
+.fancy-toggle-button:after {
+    content: " ]"
+}
 #header-img.default-header {
-    background-image: url(https://b.thumbs.redditmedia.com/jJvwY-5wBxPm_7JkUB_jI5u8fqXVvWtzu7V2ngjuITI.png)!important;
+    background-image: url(%%blank%%)!important;
     font-size: 0!important;
     display: inline!important
 }
-#header-img.default-header:after {
-    content: "reddit@";
+#mail.havemail,
+#mail.nohavemail,
+#modmail.havemail,
+#modmail.nohavemail {
+    background-image: url(%%sprites%%);
+    background-repeat: no-repeat
+}
+#header-bottom-left #header-img.default-header:after {
+    content: "c:∖reddit∖";
     margin-left: 5px;
-    color: #0c0;
+    color: silver;
     font-size: 39px!important;
     font-weight: 400;
     display: inline!important
@@ -230,42 +284,43 @@ body.wiki-page {
 .side .titlebox .md {
     font-size: small
 }
+
 #header-img-a:visited,
 .anchor-right,
 .hover-bubble,
 .multi-selector,
 body>div.multi-selector.hover-bubble.anchor-right>div.title>strong {
-    color: #0c0!important
+    color: silver!important
 }
 .hover-bubble.multi-selector label a,
 div.multi-selector.hover-bubble.anchor-right {
-    border: 1px solid #0c0
+    border: 1px solid silver
 }
 .hover-bubble.multi-selector label:hover {
-    background-color: #0c0;
-    color: #222
+    background-color: #CACACA;
+    color: #111
 }
 #header-bottom-right,
 .side {
-    background-color: #222
+    background-color: #111
 }
 #header-bottom-left .redditname a {
-    color: #0c0;
+    color: silver;
     font-weight: 400
 }
 #header-bottom-left .redditname a:visited {
-    color: #0c0
+    color: silver
 }
 #header-bottom-right .separator,
 #header-bottom-right .user,
 #header-bottom-right .userkarma,
 #header-bottom-right a {
-    color: #060;
+    color: silver;
     border: none
 }
 .side,
 .side .titlebox {
-    border-bottom: 2px solid #0c0
+    border-bottom: 4px double silver
 }
 #mail.nohavemail {
     background-position: 0 -55px
@@ -280,9 +335,9 @@ div.multi-selector.hover-bubble.anchor-right {
     background-position: 0 -81px
 }
 .side {
-    margin-top: 65px;
-    border-left: 2px solid #0c0;
-    border-right: 2px solid #0c0;
+    margin-top: 116px;
+    border-left: 4px double silver;
+    border-right: 4px double silver;
     width: 400px
 }
 .side .titlebox {
@@ -295,8 +350,8 @@ div.multi-selector.hover-bubble.anchor-right {
     text-align: center;
     margin: 10px 0;
     padding: 10px 0;
-    color: #0c0;
-    content: "/r/EliteShell 2.4 by /u/mos_6502"
+    color: silver;
+    content: "/r/EliteShell 2.4.1D Beta by /u/mos_6502, with additional CSS changes by /u/ggppjj and /u/denkyuu"
     /*! Please, don't mess with this. I worked hard to make this theme awesome, and 
     * I'd like others to be able to as well. Keeping this in lets others find and contribute
     * to the theme, making it better :)
@@ -308,12 +363,19 @@ div.multi-selector.hover-bubble.anchor-right {
     border: none;
     background: 0 0;
     padding: 0;
-    color: #0c0
+    color: silver
 }
 .fancy-toggle-button {
     margin: 0
 }
+.c-btn:hover,
+.side .login-form-side input,
+.side .titlebox .usertext-body .md hr {
+    background-color: #111
+}
+.debuginfo .icon,
 .subscribers .word,
+.users-online .word,
 .users-online:before {
     display: none
 }
@@ -321,21 +383,13 @@ div.multi-selector.hover-bubble.anchor-right {
     margin-bottom: 5px
 }
 .subscribers:before {
-    content: "C:> sudo subscribers.exe"
-}
-.users-online .number:before {
-    content: "Activating VisualBasic GUI IP Address Trace...";
-    display: block
+    content: "C:reddit∖pzwmcss∖>subscribers.exe_"
 }
 .users-online .number:after {
-    content: " x86-octet IPv64 addresses found."
+    content: " users about to be eaten by a Grue."
 }
-.debuginfo .icon,
-.users-online .word {
-    display: none
-}
-.debuginfo .content:before {
-    content: "π "
+.debuginfo .content:after {
+    content: " Copyright (c) 1981, 1982, 1983 Infocom, Inc. All rights reserved ZORK is a registered trademark of Infocom, Inc. Revision 88 / Serial number 80085"
 }
 .debuginfo .content {
     display: inline-block;
@@ -345,59 +399,47 @@ div.multi-selector.hover-bubble.anchor-right {
     top: 95px;
     right: 5px;
     width: 390px;
-    text-transform: lowercase;
     font-size: small;
     text-align: left;
-    color: #0c0;
-    border-top: 2px solid #0c0;
-    border-right: 2px solid #0c0;
-    border-left: 2px solid #0c0;
+    color: silver;
+    border-top: 4px double silver;
+    border-right: 4px double silver;
+    border-left: 4px double silver;
     border-bottom: none;
     padding: 5px;
-	height: 50px
+    height: 99px
 }
-body>div.side>div:nth-child(5)>div>h1>a:after {
-    content: "█";
-    color: #222;
-    -webkit-animation: blinky 1.06s steps(80, start) infinite;
-    animation: blinky 1.06s steps(80, start) infinite;
-}
-@-webkit-keyframes blinky {
+@keyframes blink {
     0%, 50% {
-        color: #0c0
+        color: silver
     }
     100%,
     70% {
-        color: #222
+        color: #111
     }
 }
-@keyframes blinky {
+@-webkit-keyframes blink {
     0%, 50% {
-        color: #0c0
+        color: silver
     }
     100%,
     70% {
-        color: #222
+        color: #111
     }
-}
-.c-btn:hover,
-.side .login-form-side input,
-.side .titlebox .usertext-body .md hr {
-    background-color: #222
 }
 .side .spacer {
     margin: 0;
     padding: 0
 }
 .side .login-form-side {
-    border-bottom: 2px solid #0c0;
+    border-bottom: 2px dashed silver;
     border-top: none;
     border-left: none;
     border-right: none
 }
 .side .login-form-side input {
-    color: #0c0;
-    border: 2px solid #0c0
+    color: silver;
+    border: 2px dashed silver
 }
 .c-btn-primary,
 .icon-menu a,
@@ -420,21 +462,21 @@ body>div.side>div:nth-child(5)>div>h1>a:after {
 .title-field,
 .url-field,
 input {
-    background-color: #222;
-    color: #0c0
+    background-color: #111;
+    color: silver
 }
 .c-btn {
     border: none
 }
 .submit_text h1,
 .titlebox h1 a {
-    color: #0c0
+    color: silver
 }
 .content.submit .info-notice,
 .linefield,
 .roundfield,
 .submit_text h1 {
-    background-color: #001A00
+    background-color: black
 }
 .disabled .morelink,
 .disabled .morelink a,
@@ -447,16 +489,30 @@ input {
 .tabmenu li.selected a,
 .tabmenu.formtab,
 .tabmenu.formtab a {
-    background-color: #222;
-    color: #0c0
+    background-color: #111;
+    color: silver
 }
 .content.submit .info-notice {
     border-color: red
 }
-.infobar,
-.tabmenu .selected,
-.usertable>.toggle {
-    border: 1px solid #0c0
+.tabmenu li.selected a {
+    border-bottom: none!important
+}
+.tabmenu li.selected::before {
+    content: "["
+}
+.tabmenu li.selected::after {
+    content: "]"
+}
+.disabled .morelink,
+.disabled .morelink a,
+.disabled .morelink:hover,
+.morelink {
+    width: 100%
+}
+.sidecontentbox .content {
+    border-top: 2px double silver;
+    border-bottom: 2px double silver
 }
 .disabled .morelink a,
 .flairselector li.selected,
@@ -464,16 +520,23 @@ input {
 .tabmenu li.selected a,
 .tabmenu.formtab .selected a,
 .tabmenu.formtab a {
-    background-color: #222;
-    border: 1px solid #0c0;
-    color: #0c0
+    background-color: #111;
+    border: 1px dashed silver;
+    color: silver
 }
 .selected a {
     font-weight: 700
 }
+.infobar {
+    border: 1px double silver
+}
+.tabmenu .selected,
+.usertable>.toggle {
+    border: 1px dashed silver
+}
 .usertable>.toggle {
     background-color: #001A00;
-    color: #0c0
+    color: silver
 }
 .tabpane-content {
     border: none;
@@ -481,20 +544,20 @@ input {
 }
 li,
 ul {
-    color: #0c0
+    color: silver
 }
 .mlh,
 .morelink,
 .morelink:hover {
-    color: #0c0;
-    border-color: #0c0;
+    color: silver;
+    border-color: silver;
     background-image: none
 }
 .morelink a:hover {
-    color: #060!important;
-    border-color: #0c0;
+    color: silver!important;
+    border-color: silver;
     background-image: none;
-    background-color: #0c0
+    background-color: #606060
 }
 .morelink a,
 .side .usertext-body .md blockquote a,
@@ -502,20 +565,25 @@ ul {
 .side .usertext-body .md h2 a,
 .side .usertext-body .md h3 a,
 .side .usertext-body .md h4 a,
-.side .usertext-body .md h5 a,
 .side .usertext-body .md h6 a {
     display: block;
     font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
     font-size: medium;
-    color: #0c0;
+    color: silver;
     text-decoration: none;
     font-weight: 400
+}
+.morelink a:before {
+    content: "[ "
+}
+.morelink a:after {
+    content: " ]"
 }
 .morelink {
     border-left: none;
     border-right: none;
     border-top: none;
-    border-bottom: 2px solid #0c0
+    border-bottom: 4px double silver
 }
 .side .usertext-body .md a strong {
     font-weight: 400
@@ -528,7 +596,7 @@ ul {
 .side .usertext-body .md h5 a:hover,
 .side .usertext-body .md h6 a:hover {
     margin-bottom: 0;
-    border-bottom: 2px solid #0c0
+    border-bottom: 4px double silver
 }
 .side #ad_main {
     width: 300px;
@@ -538,40 +606,40 @@ ul {
     margin: 0 50px
 }
 .linklisting .thing .title a {
-    color: #0c0;
+    color: silver;
     margin-right: 0
 }
 .linklisting .thing p.title a.title:before {
-    content: "$";
-    color: #0c0
+    content: "c:∖reddit∖pzwmcss∖";
+    color: silver
 }
-.linklisting .thing .title a:visited {
-    color: #008F00
+.linklisting .thing p.title a.title:after {
+    content: ".exe";
+    color: silver
 }
-.thing .title {
-    color: #0c0
-}
+.linklisting .thing .title a:visited,
+.thing .title,
 .thing .title:visited,
 .thing.visited .title {
-    color: #060
+    color: silver
 }
 .linklisting .thing .title a:hover {
-    color: #0c0;
+    color: silver;
     text-decoration: underline
 }
 .linklisting .entry .buttons li a {
-    color: #0c0;
+    color: silver;
     font-weight: 400
 }
 .linklisting ul.flat-list.buttons a.comments {
     font-size: small;
-    color: #0c0
+    color: silver
 }
 .link.last-clicked {
     border: none
 }
 .thing.stickied {
-    border-left: 7px solid #0c0!important
+    border-left: 7px solid #FFF!important
 }
 .thing.stickied a.title {
     font-weight: 400
@@ -580,31 +648,31 @@ body.comments-page .side .linkinfo {
     display: none
 }
 .morecomments a {
-    color: #0c0;
+    color: silver;
     font-weight: 400!important
 }
 .link .usertext .md {
-    border: 2px solid #0c0;
+    border: 4px double silver;
     background: 0 0;
     border-radius: 0;
-    color: #0c0
+    color: silver
 }
 .comment .child,
 .comment .showreplies {
-    border-left: 2px solid #060
+    border-left: 4px double silver
 }
 .entry .buttons li a {
-    color: #060;
+    color: silver;
     font-weight: 400
 }
 .commentarea .tagline {
-    color: #060
+    color: silver
 }
 hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 2px solid #0c0;
+    border-top: 4px double silver;
     margin: 0;
     padding: 0
 }
@@ -618,33 +686,31 @@ hr {
     background: 0 0
 }
 .commentarea .menuarea {
-    color: #0c0
+    color: silver
 }
 .commentarea .menuarea .dropdown.lightdrop .selected {
     color: inherit
 }
 .commentarea .panestack-title {
-    border-bottom: 2px solid #0c0
+    border-bottom: 2px solid silver
 }
 .commentarea .menuarea .drop-choices {
-    background-color: #222;
-    border: 2px solid #0c0
+    background-color: #111;
+    border: 2px solid silver
 }
 .commentarea .menuarea .drop-choices a.choice:hover {
-    background-color: #222;
+    background-color: #111;
     border: none
 }
 .commentarea .usertext-edit textarea {
-    background-color: #222;
-    border: 2px solid #0c0;
-    color: #0c0
+    background-color: #111;
+    border: 2px solid silver;
+    color: silver
 }
 .comment .collapsed,
-.comment .collapsed a {
-    color: #060
-}
+.comment .collapsed a,
 .comment .expand {
-    color: #0c0
+    color: silver
 }
 .comment .expand:hover {
     color: red!important;
@@ -660,23 +726,21 @@ hr {
 }
 .new-comment .usertext-body,
 .usertext.border .usertext-body {
-    border: 2px solid #060;
+    border: 2px solid silver;
     background: 0 0
 }
-.arrow.down,
-.arrow.downmod,
-.arrow.up,
-.arrow.upmod {
-    background-image: url(%%sprites%%);
-    width: 14px;
-    height: 11px
+.comment a.author {
+    color: #FFF
 }
-.comment a.author,
 .comment a.author:visited {
-    color: #060
+    color: silver
 }
 .comment.collapsed .tagline a {
     color: red!important
+}
+.footer-parent .bottommenu,
+.gold-button {
+    color: silver
 }
 .arrow.up {
     background-position: -15px -22px
@@ -691,9 +755,9 @@ hr {
     background-position: -15px -11px
 }
 .gold-form .roundfield {
-    border: 2px solid #0c0;
-    background-color: #222;
-    color: #0c0;
+    border: 2px solid silver;
+    background-color: #111;
+    color: silver;
     border-radius: 0
 }
 .gold-payment .roundfield-content {
@@ -703,9 +767,8 @@ hr {
     display: none
 }
 .gold-button {
-    border: 1px solid #0c0;
-    background: #222;
-    color: #0c0;
+    border: 1px solid silver;
+    background: #111;
     text-shadow: none
 }
 .gold-payment .close-button {
@@ -717,36 +780,31 @@ hr {
     opacity: 1;
     text-indent: 0
 }
-.footer-parent .bottommenu {
-    color: #0c0
-}
 .footer-parent .bottommenu a {
-    color: #0c0;
+    color: #FFF;
     text-decoration: none
 }
 .footer-parent .bottommenu a:hover {
     text-decoration: underline
 }
 .footer-parent .bottommenu a:visited {
-    color: #060
+    color: silver
 }
 .footer-parent .flat-vert.title {
-    color: #0c0;
-    font-size: 1em;
-
+    color: silver;
+    font-size: 1em
 }
 .buygold {
-    color: #0c0
+    color: silver
 }
 .footer-parent .rounded {
     border-radius: 0;
     padding: 0
 }
 .footer-parent .footer {
-    border: 2px solid #0c0
+    border: 2px solid silver
 }
 .footer-parent .footer .col {
- 
     padding: 5px;
     margin: 0
 }
@@ -756,7 +814,7 @@ hr {
 .gold-accent {
     background: 0 0;
     border: none;
-    color: #060
+    color: silver
 }
 .linkflair-goal-bucket-1,
 .linkflair-goal-bucket-1-active,
@@ -765,7 +823,7 @@ hr {
     border-left: 7px solid #FFF!important
 }
 .gold-accent.comment-visits-box {
-    color: #060;
+    color: silver;
     padding: 0;
     max-width: 550px
 }
@@ -777,97 +835,33 @@ hr {
     margin: 0;
     font-size: inherit
 }
-.linkflair-goal-bucket-1 .linkflairlabel,
-.linkflair-goal-bucket-1-active .linkflairlabel,
-.post-linkflair-goal-bucket-1 .usertext-body .md p em,
-.post-linkflair-goal-bucket-1-active .comment .usertext-body .md p em,
-.side .usertext-body .md h6 a strong {
-    font-style: normal;
-    color: #c00
-}
-.linkflair-goal-bucket-1,
-.linkflair-goal-bucket-1-active {
-    border-left: 7px solid #c00!important
-}
-.linkflair-goal-bucket-2 .linkflairlabel,
-.linkflair-goal-bucket-2-active .linkflairlabel,
-.post-linkflair-goal-bucket-2 .comment .usertext-body .md p em,
-.post-linkflair-goal-bucket-2-active .comment .usertext-body .md p em,
-.side .usertext-body .md h5 a strong {
-    font-style: normal;
-    color: #f60
-}
-.linkflair-goal-bucket-2,
-.linkflair-goal-bucket-2-active {
-    border-left: 7px solid #f60!important
-}
-.linkflair-goal-bucket-3 .linkflairlabel,
-.linkflair-goal-bucket-3-active .linkflairlabel,
-.post-linkflair-goal-bucket-3 .comment .usertext-body .md p em,
-.post-linkflair-goal-bucket-3-active .comment .usertext-body .md p em,
-.side .usertext-body .md h4 a strong {
-    font-style: normal;
-    color: #cc0
-}
 .linkflair-goal-bucket-3,
-.linkflair-goal-bucket-3-active {
-    border-left: 7px solid #cc0!important
-}
-.linkflair-goal-bucket-4 .linkflairlabel,
-.linkflair-goal-bucket-4-active .linkflairlabel,
-.post-linkflair-goal-bucket-4 .comment .usertext-body .md p em,
-.post-linkflair-goal-bucket-4-active .comment .usertext-body .md p em,
-.side .usertext-body .md h3 a strong {
-    font-style: normal;
-    color: #06c
-}
+.linkflair-goal-bucket-3-active,
 .linkflair-goal-bucket-4,
-.linkflair-goal-bucket-4-active {
-    border-left: 7px solid #06c!important
-}
-.linkflair-goal-bucket-5 .linkflairlabel,
-.linkflair-goal-bucket-5-active .linkflairlabel,
-.post-linkflair-goal-bucket-5 .comment .usertext-body .md p em,
-.post-linkflair-goal-bucket-5-active .comment .usertext-body .md p em,
-.side .usertext-body .md h2 a strong {
-    font-style: normal;
-    color: #96c
-}
+.linkflair-goal-bucket-4-active,
 .linkflair-goal-bucket-5,
-.linkflair-goal-bucket-5-active {
-    border-left: 7px solid #96c!important
-}
-.linkflair-goal-bucket-6 .linkflairlabel,
-.linkflair-goal-bucket-6-active .linkflairlabel,
-.post-linkflair-goal-bucket-6 .comment .usertext-body .md p em,
-.post-linkflair-goal-bucket-6-active .comment .usertext-body .md p em,
-.side .usertext-body .md h1 a strong {
-    font-style: normal;
-    color: #3c9
-}
+.linkflair-goal-bucket-5-active,
 .linkflair-goal-bucket-6,
-.linkflair-goal-bucket-6-active {
-    border-left: 7px solid #3c9!important
+.linkflair-goal-bucket-6-active,
+.linkflair-lounge {
+    border-left: 7px solid silver!important
 }
 .linkflair-lounge .linkflairlabel,
 .post-linkflair-lounge .comment .usertext-body .md p,
 .side .usertext-body .md blockquote a strong {
-    color: #9A7D2E
-}
-.linkflair-lounge {
-    border-left: 7px solid #9A7D2E!important
+    color: #FFF
 }
 .comment .child .usertext-body .md p {
-    color: #0c0
+    color: silver
 }
 .comment .child .usertext-body .md p em {
-    color: #0c0;
+    color: silver;
     font-style: italic
 }
 .res-navTop #userbarToggle {
-    color: #0c0;
-    background-color: #222;
-    border: 1px solid #0c0
+    color: silver;
+    background-color: #111;
+    border: 1px dashed silver
 }
 .content .RES-keyNav-activeElement,
 .content .commentarea .RES-keyNav-activeElement .md,
@@ -881,39 +875,39 @@ hr {
 .res-commentBoxes .comment .comment,
 .res-commentBoxes .comment .comment .comment,
 .res-commentBoxes .comment .comment .comment .comment {
-    background-color: #222!important
+    background-color: #111!important
 }
 .sheets .col textarea {
     width: 90%
 }
 textarea {
-    border: 1px solid #0c0!important;
+    border: 1px solid silver!important;
     max-width: 86%
 }
 .c-form-control,
 input,
 textarea {
-    color: #0c0;
-    background-color: #222
+    color: silver;
+    background-color: #111
 }
 ::-webkit-scrollbar {
     width: 12px
-}
-#stylesheet_contents,
-.wiki-page .wiki-page-content #wiki_revision_reason {
-    width: 86%
 }
 ::-webkit-scrollbar-track {
     background: rgba(34, 34, 34, 1)
 }
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 204, 0, .8)
+    background: rgba(255, 255, 255, .8)
 }
 ::-webkit-scrollbar-corner {
     background: rgba(34, 34, 34, 1)
 }
+.flairselector li,
+.flairselector li:hover {
+    background-color: #111
+}
 .moderator {
-    color: #0c0
+    color: silver
 }
 .commentarea .menuarea .toggle a,
 .gadget small,
@@ -922,43 +916,41 @@ textarea {
 .rank-spacer,
 .tagline,
 body>.content .link .rank {
-    color: #007A00
+    color: #FFFFF
 }
 .flair,
 .linkflairlabel {
-    color: #0c0;
-    border: 1px solid #0c0;
-    background-color: #222
+    color: silver;
+    border: 1px solid silver;
+    background-color: #111
 }
 span.userattrs>a {
     color: red!important
-}
-#moresearchinfo {
-    border: 1px solid #0c0
 }
 .drop-choices.lightdrop,
 .flairselector,
 .flairselector h2,
 .flairselector.drop-choices.active {
-    background: #222;
+    background: #111;
     box-shadow: none;
-    border: 1px solid #0c0
+    border: 1px solid silver
 }
+#search input[type=text],
 .formtabs-content {
-    border-top: 4px solid #001A00
+    border-top: 4px double silver
 }
 #search input[type=text] {
-    border-bottom: 1px solid #0c0;
-	border-top: 2px solid #0c0;
+    border-bottom: 4px double silver;
     margin: auto;
     text-align: center;
     width: 100%
 }
-.titlebox .bottom {
-    border-top: 1px solid #007A00
+#stylesheet_contents,
+.wiki-page .wiki-page-content #wiki_revision_reason {
+    width: 86%
 }
-.sidecontentbox .content {
-    border: 1px solid #007A00
+.titlebox .bottom {
+    border-top: 2px double silver
 }
 .img-name,
 .reason,
@@ -967,11 +959,11 @@ span.userattrs>a {
 .roundfield input[type=text],
 .roundfield input[type=url],
 .roundfield textarea {
-    border: 1px solid #0c0
+    border: 1px solid silver
 }
 .md blockquote {
-    color: #0c0;
-    border-left: 3px solid #0c0;
+    color: silver;
+    border-left: 3px solid silver;
     font-family: "Lucida Console", Monaco, monospace!important
 }
 .eb-vch,
@@ -1016,79 +1008,61 @@ span.userattrs>a {
     background-position: 0 -51px
 }
 .nsfw-stamp acronym {
-    color: #0c0;
-    border: 1px solid green!important
+    color: #FFF;
+    border: 1px solid #FFF!important
 }
-.flairselector li {
-    border: 1px solid #060;
-    background-color: #222
+.c-form-control,
+.flairselector li,
+.flairselector li:hover,
+.img-name,
+input[name=reason],
+input[name=username],
+input[type=submit] {
+    border: 1px solid silver
 }
 .flairselector form {
-    border-top: 1px solid #0c0
-}
-.flairselector li:hover {
-    background-color: #222;
-    border: 1px solid #0c0
+    border-top: 1px solid silver
 }
 .flairselectbtn,
 .flairselector li a {
-    color: #060!important
+    color: silver!important
 }
 .flairselector li a:hover {
-    color: #0c0!important
+    color: #FFF!important
 }
 .flair-entry {
     display: block
 }
 ::selection {
-    background: #00A300
+    background: silver
 }
 ::-moz-selection {
-    background: #00A300
+    background: silver
 }
 body.wiki-page {
-    background-color: #222
+    background-color: #111
 }
 .wiki-page .wikititle {
-    color: #060
+    color: #FFF
+}
+.c-form-control,
+.linefield,
+.revision a,
+.wiki-page .pageactions .wikiaction-current,
+.wiki-page .wiki-page-content .md {
+    color: silver
 }
 .content .infobar {
     width: 60%
 }
-.c-form-control,
-.linefield,
-.wiki-page .wiki-page-content .md {
-    color: #0c0
-}
-.wiki-page .pageactions .wikiaction-current {
-    color: #0c0;
-    background-color: #060
-}
 .wiki-page .pageactions .wikiaction:hover {
-    color: #060;
-    background-color: #0c0
-}
-.c-form-control,
-.img-name,
-input[name=reason],
-input[name=username],
-input[type=submit] {
-    border: 1px solid #0c0
-}
-input[type=file] {
-    background-color: #001A00
+    background-color: silver
 }
 .wiki-page .pageactions {
-    border: 2px solid #0c0
+    border: 2px solid silver
 }
 .wiki-page .wiki-page-content .wikirevisionlisting .generic-table {
     max-width: 87%
-}
-.revision {
-    background-color: #060
-}
-.revision a {
-    color: #0c0
 }
 .img-name {
     border: none
@@ -1096,19 +1070,24 @@ input[type=file] {
 .next-suggestions a,
 .nextprev a {
     text-decoration: none;
-    color: #0c0;
-    background: #222;
-    border: 1px solid #0c0
+    color: silver;
+    background: #111;
+    border: 1px solid silver
 }
 .next-suggestions a:hover,
 .nextprev a:hover {
-    color: #222!important;
-    background: #0c0!important;
-    border: 1px solid #0c0
+    color: #111!important;
+    background: silver!important;
+    border: 1px solid silver
 }
 .next-suggestions .separator,
 .nextprev .separator {
-    border-left: 1px solid #0c0
+    border-left: 1px solid silver
+}
+.md code,
+.md pre,
+code {
+    border: 1px solid #FFF
 }
 .sidebox.create .spacer .subtitle {
     text-align: center
@@ -1132,43 +1111,36 @@ input[type=file] {
 }
 .md pre,
 code {
-    background-color: #2E2E2B!important;
-    border: 1px solid #0c0
-}
-.md code,
-.md pre {
-    border: 1px solid #060
+    background-color: #2E2E2B!important
 }
 .md hr {
-    background: #0c0
+    background: #FFF
 }
 .searchfacets,
 .searchpane {
-    background-color: #222!important;
+    background-color: #111!important;
     border: none
 }
 .searchfacets {
     box-shadow: none
 }
+.cover,
 .popup {
-    background-color: #222
-}
-.cover {
-    background-color: #000
+    background-color: #111
 }
 .login-form-section>h3 {
-    color: #0c0!important
+    color: silver!important
 }
 .commentarea div.usertext-body a:hover:after,
 .self .usertext-body a:hover:after {
     position: absolute;
     padding: 2px;
-    border: 1px solid #0c0;
+    border: 1px solid silver;
     background: #333;
     text-align: center;
     font-weight: 400;
     font-size: 11px;
-    color: #0c0;
+    color: silver;
     margin-left: 1px;
     margin-top: 15px;
     margin-bottom: 60px!important;
@@ -1180,7 +1152,6 @@ code {
 /*! I'm all for supporting you guys, but this is somewhat intrusive. 
  * Most subs appear to be able to hide this with no repercussions.
  */
-
 .sponsorshipbox {
     visibility: hidden!important;
     display: none!important
@@ -1199,16 +1170,81 @@ a[href*="/u/mos_6502"] {
 }
 a[href*="reddit.com/user/mos_6502"],
 a[href*="/u/mos_6502"]:before {
-    /*! content: url(%%mos%%);  This breaks the CSS submission, there is no image titled mos in the repo. */
     font-size: 0;
     visibility: visible;
     vertical-align: middle
+}
+.usertext h5 {
+    background-color: #AAA;
+    color: #111
+}
+.usertext h5:before {
+    content: "--";
+    color: #AAA
+}
+.submit.mod-override .morelink a:after {
+    background-image: url(%%blank%%)!important;
+    content: "as moderator ] ";
+    position: relative
+}
+.RESDialogSmall>h3,
+.RESMacroDropdown li a,
+.usertext-edit .RESDialogSmall .md.RESDialogContents {
+    background-color: #111!important
+}
+.REStoggle.RESDashboardToggle,
+span.RESshortcut.RESshortcutside[style] {
+    background-image: url(%%blank%%)!important;
+    border: none!important;
+    display: inline!important
+}
+#header-bottom-left .redditname a::after {
+    content: ">"
+}
+.footer-parent .footer .col {
+    border: 4px double silver!important
+}
+#moresearchinfo,
+#searchexpando,
+.footer-parent .flat-vert.title {
+    border-bottom: 4px double silver
 }
 #header-img.default-header {
     text-decoration: none!important
 }
 #header-img.default-header:hover:after {
     text-decoration: underline!important
+}
+.arrow.down,
+.arrow.downmod,
+.arrow.up,
+.arrow.upmod {
+    background-image: none;
+    width: 14px;
+    height: 14px;
+    text-align: center
+}
+.arrow.down:before,
+.arrow.downmod:before,
+.arrow.up:before,
+.arrow.upmod:before {
+    font-size: 20px;
+    line-height: 10px;
+    color: grey
+}
+.arrow.downmod:before,
+.arrow.upmod:before,
+.search-result-meta .stickied-tagline,
+.tagline .stickied-tagline {
+    color: #FFF
+}
+.arrow.up:before,
+.arrow.upmod:before {
+    content: "▲"
+}
+.arrow.down:before,
+.arrow.downmod:before {
+    content: "▼"
 }
 #moresearchinfo,
 #searchexpando {
@@ -1219,3 +1255,6 @@ a[href*="/u/mos_6502"]:before {
 #RESStyleSheetTipPane {
     width: 71.5%;
 }
+.tabmenu (
+    margin-top: 0!important
+)
