@@ -36,7 +36,6 @@
  * Spritesheet (save as sprites.png): https://imgur.com/bxscGWu
  * Expando buttons (save as expando.png): https://imgur.com/0Fox5fh
  */
-
 .commentarea .usertext-edit textarea,
 .footer-parent .flat-vert.title,
 .gold-button,
@@ -153,7 +152,8 @@ body.wiki-page {
 .message-count,
 .modal-content {
     background-color: #222;
-    border: none
+    border: none;
+    height: 90px
 }
 #header #sr-header-area {
     background-color: #222;
@@ -193,9 +193,6 @@ body.wiki-page {
 #header #sr-header-area .sr-bar .separator {
     color: #060
 }
-#header-bottom-left #header-img.default-header {
-    display: none
-}
 .side:after,
 .subscribers,
 .subscribers .number {
@@ -204,7 +201,7 @@ body.wiki-page {
 #header-bottom-left .redditname {
     font-variant: normal;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 39px;
     margin-left: -5px
 }
 #header-bottom-left .redditname:after {
@@ -216,12 +213,18 @@ body.wiki-page {
     height: 0;
     margin: 0
 }
-#header-img-a:after {
+#header-img.default-header {
+    background-image: url(https://b.thumbs.redditmedia.com/jJvwY-5wBxPm_7JkUB_jI5u8fqXVvWtzu7V2ngjuITI.png)!important;
+    font-size: 0!important;
+    display: inline!important
+}
+#header-img.default-header:after {
     content: "reddit@";
     margin-left: 5px;
     color: #0c0;
-    font-size: 3em;
-    font-weight: 400
+    font-size: 39px!important;
+    font-weight: 400;
+    display: inline!important
 }
 .fancy-toggle-button .active,
 .side .titlebox .md {
@@ -277,7 +280,7 @@ div.multi-selector.hover-bubble.anchor-right {
     background-position: 0 -81px
 }
 .side {
-    margin-top: 55px;
+    margin-top: 65px;
     border-left: 2px solid #0c0;
     border-right: 2px solid #0c0;
     width: 400px
@@ -338,9 +341,8 @@ div.multi-selector.hover-bubble.anchor-right {
     display: inline-block;
     position: absolute;
     overflow: hidden;
-    max-height: 43px;
     margin: 0;
-    top: 70px;
+    top: 95px;
     right: 5px;
     width: 390px;
     text-transform: lowercase;
@@ -350,36 +352,32 @@ div.multi-selector.hover-bubble.anchor-right {
     border-top: 2px solid #0c0;
     border-right: 2px solid #0c0;
     border-left: 2px solid #0c0;
-    border-bottom: 2px solid #0c0;
-    padding: 5px
+    border-bottom: none;
+    padding: 5px;
+	height: 50px
 }
 body>div.side>div:nth-child(5)>div>h1>a:after {
-    content: "a";
-    color: transparent;
-    background-color: #222;
-    -webkit-animation-name: blinky;
-    -webkit-animation-duration: 1s;
-    animation-name: blinky;
-    animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite
+    content: "█";
+    color: #222;
+    -webkit-animation: blinky 1.06s steps(80, start) infinite;
+    animation: blinky 1.06s steps(80, start) infinite;
 }
 @-webkit-keyframes blinky {
-    0%, 25% {
-        background-color: #222
+    0%, 50% {
+        color: #0c0
     }
     100%,
-    50% {
-        background-color: #0c0
+    70% {
+        color: #222
     }
 }
 @keyframes blinky {
-    0%, 25% {
-        background-color: #222
+    0%, 50% {
+        color: #0c0
     }
     100%,
-    50% {
-        background-color: #0c0
+    70% {
+        color: #222
     }
 }
 .c-btn:hover,
@@ -511,8 +509,13 @@ ul {
     font-size: medium;
     color: #0c0;
     text-decoration: none;
-    margin-bottom: 2px;
     font-weight: 400
+}
+.morelink {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #0c0
 }
 .side .usertext-body .md a strong {
     font-weight: 400
@@ -730,7 +733,7 @@ hr {
 .footer-parent .flat-vert.title {
     color: #0c0;
     font-size: 1em;
-    border-bottom: 2px solid #0c0
+
 }
 .buygold {
     color: #0c0
@@ -743,7 +746,7 @@ hr {
     border: 2px solid #0c0
 }
 .footer-parent .footer .col {
-    border-left: 2px solid #0c0;
+ 
     padding: 5px;
     margin: 0
 }
@@ -754,6 +757,12 @@ hr {
     background: 0 0;
     border: none;
     color: #060
+}
+.linkflair-goal-bucket-1,
+.linkflair-goal-bucket-1-active,
+.linkflair-goal-bucket-2,
+.linkflair-goal-bucket-2-active {
+    border-left: 7px solid #FFF!important
 }
 .gold-accent.comment-visits-box {
     color: #060;
@@ -939,8 +948,11 @@ span.userattrs>a {
     border-top: 4px solid #001A00
 }
 #search input[type=text] {
-    margin-top: 9px;
-    border: 1px solid #0c0
+    border-bottom: 1px solid #0c0;
+	border-top: 2px solid #0c0;
+    margin: auto;
+    text-align: center;
+    width: 100%
 }
 .titlebox .bottom {
     border-top: 1px solid #007A00
@@ -1178,7 +1190,7 @@ code {
     border: none
 }
 #header-bottom-left .tabmenu li.selected a {
-    border-bottom: 2px solid #0c0
+    border-bottom: none!important
 }
 a[href*="reddit.com/user/mos_6502"],
 a[href*="/u/mos_6502"] {
@@ -1191,4 +1203,19 @@ a[href*="/u/mos_6502"]:before {
     font-size: 0;
     visibility: visible;
     vertical-align: middle
+}
+#header-img.default-header {
+    text-decoration: none!important
+}
+#header-img.default-header:hover:after {
+    text-decoration: underline!important
+}
+#moresearchinfo,
+#searchexpando {
+    border-top: none;
+    border-left: none;
+    border-right: none
+}
+#RESStyleSheetTipPane {
+    width: 71.5%;
 }
