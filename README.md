@@ -11,3 +11,8 @@ If you're using Elite Shell in your subreddit, please [make a post](https://www.
 2. Simply copy the contents of the [CSS file](https://github.com/ctrezevant/eliteshell/blob/master/eliteshell.css) into the relevant box on your subreddit's stylesheet page.
 
 3. It's that simple! Enjoy EliteShell!
+
+
+## Note for DOS fans
+
+Searching for a more Microsoft-centric look? @ggppjj has you covered! Check out the DOS-flavored version of EliteShell [here](https://github.com/ggppjj/eliteshell)!
